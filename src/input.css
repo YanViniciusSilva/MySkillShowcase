@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+  .default_text{
+    @apply text-white font-ubuntu text-xl;
+  }
+}
