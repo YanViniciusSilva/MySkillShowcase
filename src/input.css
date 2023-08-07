@@ -9,12 +9,16 @@
     @apply text-white font-ubuntu text-xl;
   }
 
+  .default_title {
+    @apply text-white font-ubuntu text-3xl font-thin;
+  }
+
   /* animação de digitação para textos */
   .animation_style_typing {
     @apply whitespace-nowrap overflow-hidden w-full animate-typing;
   }
 
-  /* tamanho padrão para ícones de redes sociais */
+  /* estilo padrão para ícones de redes sociais */
   .social_icons {
     @apply
       w-12
@@ -27,11 +31,35 @@
       hover:ease-in-out
       hover:translate-y-2
       hover:scale-125
-      hover:color_theme;
+      hover:bg_theme;
   }
 
   /* degradê tema */
-  .color_theme {
-    @apply bg-gradient-to-br from-fuchsia-600 via-purple-500 to-rose-600;
+  .bg_theme {
+    @apply bg-gradient-to-br from-indigo-600 via-fuchsia-600 to-pink-600;
+  }
+
+  /* estilo padrão de botões */
+  .btn_theme {
+    @apply
+      bg-gray-600
+      rounded-sm
+      px-2
+      py-1
+      text-white
+      font-ubuntu
+      m-2
+      w-full
+      text-center
+      font-medium
+
+      /* responsividade min 769px */
+      md:w-40
+
+      /* hover */
+      hover:transition-all
+      hover:bg_theme
+      hover:ease-in-out
+      hover:translate-y-1
   }
 }

@@ -1,0 +1,11 @@
+{
+  "header": {
+    "saudation": "Olá! sou Yan Silva",
+    "sections_btn": {
+      "about_me": "Sobre mim",
+      "tecnologies": "Tecnologias",
+      "projects": "Projetos"
+    }
+  },
+  "about_me_title": "Sobre mim"
+}

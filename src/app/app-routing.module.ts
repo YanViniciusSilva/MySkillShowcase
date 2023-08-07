@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './shell/header/header.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 const routes: Routes = [
   {
     path:'',
-    component: HeaderComponent
+    component: AboutMeComponent
   }
 
 ];

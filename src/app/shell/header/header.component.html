@@ -1,18 +1,24 @@
 <div class="flex flex-col w-full items-center justify-center">
   <div class="flex flex-col items-center justify-evenly my-10">
-    <div class="flex justify-center items-center w-36 h-36 rounded-full mb-4 p-0.5 color_theme">
+    <div class="flex justify-center items-center w-36 h-36 rounded-full mb-4 p-0.5 bg_theme">
       <img class="w-full rounded-full" src="assets/foto-square.png"/>
     </div>
 
     <div>
       <p class="default_text animation_style_typing">
-        Hello! I’m Yan Silva
+        {{language.header.saudation}}
       </p>
     </div>
 
     <div class="flex flex-row justify-evenly w-72 p-5">
       <a class="social_icons" *ngFor="let social of socialMidiaLinks" [href]="social.link" target="_blank">
         <img class="hover:animate-rotate" [src]="social.image"/>
+      </a>
+    </div>
+
+    <div class="flex flex-col items-center justify-between w-full p-1 md:flex-row">
+      <a class="btn_theme" *ngFor="let btns of btn_contents" [href]="btns.redirect">
+        {{btns.btn}}
       </a>
     </div>
   </div>

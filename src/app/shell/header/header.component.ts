@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { languages } from 'src/app/languages/languages';
 
 @Component({
   selector: 'app-header',
@@ -6,6 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+  language = languages(false)
 
   @Input()
   visibility:boolean = true
@@ -27,6 +30,21 @@ export class HeaderComponent {
     {
       link: 'mailto:yanviniciusjesussilva@gmail.com',
       image: 'assets/gmail.png'
+    }
+  ]
+
+  btn_contents = [
+    {
+      btn: this.language.header.sections_btn.about_me,
+      redirect: ''
+    },
+    {
+      btn: this.language.header.sections_btn.tecnologies,
+      redirect: ''
+    },
+    {
+      btn: this.language.header.sections_btn.projects,
+      redirect: ''
     }
   ]
 
