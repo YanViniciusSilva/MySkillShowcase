@@ -4,7 +4,34 @@
 
 
 @layer components{
-  .default_text{
+  /* formatação padrão de texto */
+  .default_text {
     @apply text-white font-ubuntu text-xl;
+  }
+
+  /* animação de digitação para textos */
+  .animation_style_typing {
+    @apply whitespace-nowrap overflow-hidden w-full animate-typing;
+  }
+
+  /* tamanho padrão para ícones de redes sociais */
+  .social_icons {
+    @apply
+      w-12
+      h-12
+      p-2
+      bg-white
+      rounded-full
+      border-transparent
+      hover:transition-all
+      hover:ease-in-out
+      hover:translate-y-2
+      hover:scale-125
+      hover:color_theme;
+  }
+
+  /* degradê tema */
+  .color_theme {
+    @apply bg-gradient-to-br from-fuchsia-600 via-purple-500 to-rose-600;
   }
 }
