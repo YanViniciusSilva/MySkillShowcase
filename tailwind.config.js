@@ -20,7 +20,7 @@ module.exports = {
         }
       },
       animation: {
-        'typing' : 'typing 3s steps(20), blinking 0.5s',
+        'typing' : 'typing 3s steps(22), blinking 0.5s',
         'rotate' : 'rotate 0.3s',
       }
     },

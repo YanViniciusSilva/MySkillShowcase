@@ -62,4 +62,18 @@
       hover:ease-in-out
       hover:translate-y-1
   }
+
+  /* estilização ng select */
+  .select {
+    @apply bg-zinc-800 w-36 py-1 px-3 my-1 mr-4 font-ubuntu text-white;
+  }
+
+  .select ng-dropdown-panel {
+    @apply bg-zinc-800 mt-2 -left-[0.3px];
+  }
+
+  .select ng-dropdown-panel div.ng-dropdown-panel-items div div.ng-option {
+    @apply w-full py-2 px-2 hover:bg_theme;
+  }
+
 }

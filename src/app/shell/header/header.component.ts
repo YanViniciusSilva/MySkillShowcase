@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { languages } from 'src/app/languages/languages';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,7 @@ import { languages } from 'src/app/languages/languages';
 })
 export class HeaderComponent {
 
-  language = languages(false)
+  language = environment.translation
 
   @Input()
   visibility:boolean = true

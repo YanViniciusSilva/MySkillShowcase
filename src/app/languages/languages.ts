@@ -3,8 +3,11 @@ import * as english from './english.json';
 
 
 
-export const languages = (isPortuguese: boolean) => {
-  const language = isPortuguese ? portuguese : english;
-
-  return language;
+export const languages = (lang: string) => {
+  switch (lang) {
+    case 'EN':
+      return english
+    case 'PT-BR':
+      return portuguese;
+  }
 }

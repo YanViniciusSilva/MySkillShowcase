@@ -1,0 +1,31 @@
+<section class="flex flex-row-reverse justify-between md:justify-normal w-full border-b border-gray-500">
+  <div class="flex w-fit items-center justify-center">
+    <ng-select
+      class="select"
+      [searchable]="false"
+      [clearable]="false"
+      [items]="selectOptions"
+      bindLabel="label"
+      bindValue="value"
+      [formControl]="langSelect"
+      (change)="onSelectLang()"
+    >
+    </ng-select>
+  </div>
+
+  <div class="flex w-fit items-center justify-center mx-2">
+    <label for="check" class="relative bg-zinc-800 w-16 h-8 rounded-full cursor-pointer">
+      <input type="checkbox" id="check" class="sr-only peer"  (click)="onChangeIcon()"/>
+      <span
+        class="
+          bg-fuchsia-600 w-2/5 h-3/4 rounded-full absolute left-1 top-1 peer-checked:bg-white
+          peer-checked:left-9 transition-all duration-500 items-center justify-center flex"
+      >
+        <ng-icon
+          class="relative"
+          [name]="icon"
+        ></ng-icon>
+      </span>
+    </label>
+  </div>
+</section>
