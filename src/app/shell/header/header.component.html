@@ -14,8 +14,7 @@
       <svg-icon
         class="social_icons"
         *ngFor="let social of socialMidiaLinks"
-        [routerLink]="social.link"
-        [target]="'_blank'"
+        (click)="navigate(social.link)"
         [src]="social.image"
       />
     </div>

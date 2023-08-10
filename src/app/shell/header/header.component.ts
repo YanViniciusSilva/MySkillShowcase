@@ -49,7 +49,9 @@ export class HeaderComponent {
     }
   ]
 
-  constructor() {}
+  navigate(link: string) {
+    open(link, '_blank')
+  }
 
   get myAge() {
     return this.month == 9 && this.day == 23 ? this.year - 2003 : (this.year - 1) - 2003;
