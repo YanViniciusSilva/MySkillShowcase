@@ -19,16 +19,23 @@ export class ConfigBarComponent {
   langSelect = new FormControl(localStorage.getItem('language'));
 
   icon: string;
+  isLight: boolean;
+
+  // variaveis de estilo
+  bodyColor = document.querySelector('html');
+
 
   constructor() {
+    // selecionando linguagem padrão
     if(this.languageSelected === null && this.languageSelected !== environment.translateOpt.pt && this.languageSelected !== environment.translateOpt.en){
       localStorage.setItem('language', 'PT-BR');
     }
-  }
 
-  ngOnInit() {
-    if(!this.icon){
-      this.icon = 'heroMoon';
+    // selecionando tema padrão
+    if(localStorage.getItem('theme') == 'light') {
+      this.setLightTheme()
+    } else {
+      this.setDarkTheme()
     }
   }
 
@@ -40,11 +47,29 @@ export class ConfigBarComponent {
   }
 
   onChangeIcon() {
-    if(this.icon == 'heroMoon') {
-      this.icon = 'heroSun'
+    if(this.isLight == false) {
+      this.icon = 'heroSun';
+      localStorage.setItem('theme', 'light')
+      this.setLightTheme();
     } else {
-      this.icon = 'heroMoon'
+      this.icon = 'heroMoon';
+      localStorage.setItem('theme', 'dark')
+      this.setDarkTheme();
     }
+  }
+
+  setDarkTheme() {
+    localStorage.setItem('theme', 'dark')
+    this.bodyColor.className = 'dark';
+    this.icon = 'heroMoon';
+    this.isLight = false;
+  }
+
+  setLightTheme() {
+    localStorage.setItem('theme', 'light')
+    this.bodyColor.className = '';
+    this.icon = 'heroSun';
+    this.isLight = true;
   }
 
 

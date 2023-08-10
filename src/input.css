@@ -6,11 +6,11 @@
 @layer components{
   /* formatação padrão de texto */
   .default_text {
-    @apply text-white font-ubuntu text-xl;
+    @apply text-light-text dark:text-dark-text font-ubuntu text-xl;
   }
 
   .default_title {
-    @apply text-white font-ubuntu text-3xl font-thin;
+    @apply text-light-text dark:text-dark-text font-ubuntu text-3xl font-thin;
   }
 
   /* animação de digitação para textos */
@@ -21,17 +21,33 @@
   /* estilo padrão para ícones de redes sociais */
   .social_icons {
     @apply
+      flex
+      items-center
+      justify-center
       w-12
       h-12
       p-2
-      bg-white
       rounded-full
       border-transparent
+      cursor-pointer
+
+      /* tema light  */
+      bg-light-icon_bg
+      fill-light-icon_color
+
+      /* tema dark  */
+      dark:fill-dark-icon_color
+      dark:bg-dark-icon_bg
+
       hover:transition-all
       hover:ease-in-out
       hover:translate-y-2
       hover:scale-125
       hover:bg_theme;
+  }
+
+  .social_icons svg {
+    @apply hover:animate-rotate;
   }
 
   /* degradê tema */
@@ -42,16 +58,22 @@
   /* estilo padrão de botões */
   .btn_theme {
     @apply
-      bg-gray-600
       rounded-sm
       px-2
       py-1
-      text-white
       font-ubuntu
       m-2
       w-full
       text-center
       font-medium
+
+      /* tema light */
+      bg-light-btn_bg
+      text-light-btn_text
+
+      /* tema dark  */
+      dark:bg-dark-btn_bg
+      dark:text-dark-btn_text
 
       /* responsividade min 769px */
       md:w-40
@@ -61,15 +83,40 @@
       hover:bg_theme
       hover:ease-in-out
       hover:translate-y-1
+      hover:text-white
   }
 
   /* estilização ng select */
   .select {
-    @apply bg-zinc-800 w-36 py-1 px-3 my-1 mr-4 font-ubuntu text-white;
+    @apply
+      bg-transparent
+      w-36
+      py-1
+      px-3
+      my-1
+      mr-4
+      font-ubuntu
+
+      /* tema light */
+      text-light-text
+
+      /* tema dark  */
+      dark:text-dark-text;
   }
 
   .select ng-dropdown-panel {
-    @apply bg-zinc-800 mt-2 -left-[0.3px];
+    @apply
+      rounded-sm
+      mt-2 -left-[0.3px]
+
+      /* tema light */
+      bg-light-bg
+      text-light-text
+
+      /* tema dark  */
+      dark:bg-dark-btn_text
+      dark:text-dark-text;
+
   }
 
   .select ng-dropdown-panel div.ng-dropdown-panel-items div div.ng-option {

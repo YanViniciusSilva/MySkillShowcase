@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EnvironmentInjector, Input } from '@angular/core';
 import { languages } from 'src/app/languages/languages';
 import { environment } from 'src/environments/environment';
 
@@ -22,15 +22,15 @@ export class HeaderComponent {
   socialMidiaLinks = [
     {
       link: 'https://linkedin.com/in/yan-vinicius-jesus-silva-b1b071238',
-      image: 'assets/linkedin.png'
+      image: 'assets/linkedin.svg'
     },
     {
       link: 'https://github.com/YanViniciusSilva',
-      image: 'assets/git.png'
+      image: 'assets/git.svg'
     },
     {
       link: 'mailto:yanviniciusjesussilva@gmail.com',
-      image: 'assets/gmail.png'
+      image: 'assets/gmail.svg'
     }
   ]
 
@@ -48,6 +48,8 @@ export class HeaderComponent {
       redirect: ''
     }
   ]
+
+  constructor() {}
 
   get myAge() {
     return this.month == 9 && this.day == 23 ? this.year - 2003 : (this.year - 1) - 2003;
