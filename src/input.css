@@ -18,6 +18,10 @@
     @apply whitespace-nowrap overflow-hidden w-full animate-typing;
   }
 
+  .animation_style_typing_without_border {
+    @apply whitespace-nowrap overflow-hidden w-full animate-typing-no-border;
+  }
+
   /* estilo padrão para ícones de redes sociais */
   .social_icons {
     @apply
@@ -50,8 +54,8 @@
     @apply hover:animate-rotate;
   }
 
-  /* degradê tema */
-  .bg_theme {
+   /* degradê tema */
+   .bg_theme {
     @apply bg-gradient-to-br from-indigo-600 via-fuchsia-600 to-pink-600;
   }
 
@@ -84,6 +88,7 @@
       hover:ease-in-out
       hover:translate-y-1
       hover:text-white
+      hover:cursor-pointer;
   }
 
   /* estilização ng select */

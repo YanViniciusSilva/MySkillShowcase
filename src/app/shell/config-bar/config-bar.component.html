@@ -1,4 +1,4 @@
-<section class="flex flex-row-reverse justify-between md:justify-normal w-full border-b border-gray-500">
+<section class="flex flex-row-reverse justify-between md:justify-normal w-full ">
   <div class="flex w-fit items-center justify-center">
     <ng-select
       class="select"
@@ -13,12 +13,12 @@
     </ng-select>
   </div>
 
-  <div class="flex w-fit items-center justify-center mx-2">
+  <div class="flex w-fit items-center justify-center mx-2 mt-2">
     <label for="check" class="relative bg-zinc-800 dark:bg-light-bg w-16 h-8 rounded-full cursor-pointer">
       <input type="checkbox" id="check" class="sr-only peer" [checked]="isLight" (click)="onChangeIcon()"/>
       <span
         class="
-          bg-dark-bg text-dark-bg dark:text-light-bg w-2/5 h-3/4 rounded-full absolute left-0.5 top-toogle-top peer-checked:bg-light-bg
+          bg-dark-btn_bg text-dark-bg dark:text-light-bg w-2/5 h-3/4 rounded-full absolute left-0.5 top-toogle-top peer-checked:bg-light-bg
           peer-checked:left-toogle-left transition-all duration-500 flex items-center justify-center"
       >
         <ng-icon

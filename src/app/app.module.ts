@@ -13,6 +13,8 @@ import { NgIconsModule } from '@ng-icons/core';
 import { heroMoon, heroSun } from '@ng-icons/heroicons/outline';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './shared-components/loading/loading.component';
+import { TecnologiesComponent } from './pages/tecnologies/tecnologies.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     AboutMeComponent,
     ConfigBarComponent,
+    LoadingComponent,
+    TecnologiesComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,6 @@ import { HttpClientModule } from '@angular/common/http';
     AngularSvgIconModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

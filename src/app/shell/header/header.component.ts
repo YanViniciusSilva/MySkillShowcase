@@ -1,4 +1,4 @@
-import { Component, EnvironmentInjector, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { languages } from 'src/app/languages/languages';
 import { environment } from 'src/environments/environment';
 
@@ -11,7 +11,6 @@ export class HeaderComponent {
 
   language = environment.translation
 
-  @Input()
   visibility:boolean = true
 
   date = new Date();
@@ -37,11 +36,11 @@ export class HeaderComponent {
   btn_contents = [
     {
       btn: this.language.header.sections_btn.about_me,
-      redirect: ''
+      redirect: '/about-me'
     },
     {
       btn: this.language.header.sections_btn.tecnologies,
-      redirect: ''
+      redirect: '/tecnologies'
     },
     {
       btn: this.language.header.sections_btn.projects,
@@ -49,11 +48,17 @@ export class HeaderComponent {
     }
   ]
 
-  navigate(link: string) {
-    open(link, '_blank')
+  constructor() {
+    if(document.URL.includes('tecnologies')){
+      this.visibility = false;
+    }
   }
 
   get myAge() {
     return this.month == 9 && this.day == 23 ? this.year - 2003 : (this.year - 1) - 2003;
+  }
+
+  navigate(link: string) {
+    open(link, '_blank')
   }
 }

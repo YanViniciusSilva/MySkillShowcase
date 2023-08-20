@@ -13,19 +13,27 @@ module.exports = {
       colors: {
         light: {
           bg: '#e5e5e5',
-          btn_bg: '#3f3f46',
-          btn_text: '#e5e5e5',
+          // btn_bg: '#3f3f46',
+          // btn_text: '#e5e5e5',
+          btn_bg: '#e5e5e5',
+          btn_text: '#18181b',
           text: '#18181b',
-          icon_bg: '#3f3f46',
-          icon_color: '#e5e5e5'
+          // icon_bg: '#3f3f46',
+          // icon_color: '#e5e5e5',
+          icon_bg: '#e5e5e5',
+          icon_color: '#000',
         },
         dark: {
           bg: '#18181b',
-          btn_bg: '#e5e5e5',
-          btn_text: '#18181b',
+          // btn_bg: '#e5e5e5',
+          // btn_text: '#18181b',
+          btn_bg: '#3f3f46',
+          btn_text: '#e5e5e5',
           text: '#e5e5e5',
-          icon_bg: '#e5e5e5',
-          icon_color: '#000'
+          // icon_bg: '#e5e5e5',
+          // icon_color: '#000',
+          icon_bg: '#3f3f46',
+          icon_color: '#e5e5e5',
         }
       },
 
@@ -34,6 +42,10 @@ module.exports = {
         typing: {
           'from': { width: '0px', 'border-right': '3px solid'},
           'to': { 'border-right': '3px solid' }
+        },
+        typing_no_border: {
+          'from': { width: '0px', 'border-right': 'none'},
+          'to': { 'border-right': 'none' }
         },
         blinking: {
           '50%': { 'border-color': 'transparent' },
@@ -47,13 +59,15 @@ module.exports = {
       },
       animation: {
         'typing' : 'typing 3s steps(22), blinking 0.5s',
+        'typing-no-border' : 'typing_no_border 1s steps(4) infinite',
         'rotate' : 'rotate 0.3s',
+        'blinking' : 'blinking 0.5s infinite'
       }
     },
     fontFamily: {
       'ubuntu': ['Ubuntu', 'sans-serif'],
     },
   },
-  plugins: [],
+  plugins: []
 }
 
