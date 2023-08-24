@@ -6,11 +6,11 @@
 @layer components{
   /* formatação padrão de texto */
   .default_text {
-    @apply text-light-text dark:text-dark-text font-ubuntu text-xl;
+    @apply text-dark-text font-ubuntu text-lg md:text-xl;
   }
 
   .default_title {
-    @apply text-light-text dark:text-dark-text font-ubuntu text-3xl font-thin;
+    @apply text-dark-text font-ubuntu text-3xl font-thin;
   }
 
   /* animação de digitação para textos */
@@ -59,6 +59,12 @@
     @apply bg-gradient-to-br from-indigo-600 via-fuchsia-600 to-pink-600;
   }
 
+  .bg_glass {
+    @apply
+    bg-transparent
+    bg-gradient-to-br from-[#C0C0C01A] via-[#C0C0C066] to-[#C0C0C01A];
+  }
+
   /* estilo padrão de botões */
   .btn_theme {
     @apply
@@ -86,7 +92,8 @@
       hover:transition-all
       hover:bg_theme
       hover:ease-in-out
-      hover:translate-y-1
+      active:translate-y-1
+      active:text-white
       hover:text-white
       hover:cursor-pointer;
   }
@@ -128,4 +135,45 @@
     @apply w-full py-2 px-2 hover:bg_theme;
   }
 
+  /* tab */
+  .generic_tabset {
+    @apply
+      flex
+      /* flex-col */
+      items-center
+      justify-center
+      w-screen
+      default_text
+      mx-auto
+    ;
+  }
+
+  .generic_tabset ul {
+    @apply
+      flex
+      w-screen
+      items-center
+      justify-center
+    ;
+  }
+
+  .generic_tabset li {
+    @apply
+      flex
+      items-center
+      justify-center
+      btn_theme
+    ;
+  }
+
+  .tab {
+    @apply
+      flex
+      transition-all
+    ;
+  }
+
+  .tab.active {
+    @apply bg_theme;
+  }
 }

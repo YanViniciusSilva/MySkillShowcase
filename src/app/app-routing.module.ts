@@ -1,17 +1,12 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutMeComponent } from './pages/about-me/about-me.component';
-import { TecnologiesComponent } from './pages/tecnologies/tecnologies.component';
+import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
-    path:'tecnologies',
-    component: TecnologiesComponent
+    path: '',
+    loadChildren: () =>
+      import('./shell/shell.module').then(m => m.ShellModule),
   },
-  {
-    path:'about-me',
-    component: AboutMeComponent
-  }
 
 ];
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { languages } from 'src/app/languages/languages';
 import { environment } from 'src/environments/environment';
 
@@ -60,5 +60,10 @@ export class HeaderComponent {
 
   navigate(link: string) {
     open(link, '_blank')
+  }
+
+  hideElements() {
+    console.log('teste');
+    this.visibility = false;
   }
 }

@@ -1,5 +1,19 @@
-<section class="flex w-full h-20">
-  <div class="flex items-center w-full bg-transparent">
-    <p class="default_text">teste</p>
+<section class="flex flex-col w-full">
+  <div class="flex items-center justify-center w-full flex-col bg-transparent mt-16">
+    <h1 class="default_title">Skill Cards</h1>
+    <p class="default_text text-center">Abaixo você pode conferir algumas das minhas skills e tecnologias que domino!</p>
   </div>
+
+  <nb-tabset class="generic_tabset mt-14">
+    <nb-tab class="tab" tabTitle="Back">
+      <app-skill-cards></app-skill-cards>
+    </nb-tab>
+    <nb-tab class="tab" tabTitle="front">
+      <div></div>
+    </nb-tab>
+    <nb-tab class="tab" tabTitle="extras">
+      <div></div>
+    </nb-tab>
+  </nb-tabset>
+
 </section>

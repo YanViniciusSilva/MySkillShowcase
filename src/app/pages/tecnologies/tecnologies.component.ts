@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tecnologies',
@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./tecnologies.component.scss']
 })
 export class TecnologiesComponent {
-
 }
