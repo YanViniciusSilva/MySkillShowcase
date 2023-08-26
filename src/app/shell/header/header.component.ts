@@ -62,8 +62,11 @@ export class HeaderComponent {
     open(link, '_blank')
   }
 
-  hideElements() {
-    console.log('teste');
-    this.visibility = false;
+  hideElements(event) {
+    if(event.tabTitle == this.language.header.sections_btn.tecnologies || event.tabTitle == this.language.header.sections_btn.projects){
+      this.visibility = false;
+    } else {
+      this.visibility = true;
+    }
   }
 }

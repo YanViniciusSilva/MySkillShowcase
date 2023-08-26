@@ -56,7 +56,10 @@
 
    /* degradê tema */
    .bg_theme {
-    @apply bg-gradient-to-br from-indigo-600 via-fuchsia-600 to-pink-600;
+    @apply
+      /* bg-gradient-to-br from-indigo-600 via-fuchsia-600 to-pink-600 */
+      bg-gradient-to-br from-[#8000FF] via-[#BD00FF] to-[#FF007A]
+    ;
   }
 
   .bg_glass {
@@ -126,7 +129,7 @@
       text-light-text
 
       /* tema dark  */
-      dark:bg-dark-btn_text
+      dark:bg-dark-btn_bg
       dark:text-dark-text;
 
   }
@@ -176,4 +179,46 @@
   .tab.active {
     @apply bg_theme;
   }
+
+  /* Cards */
+  .skill_card {
+    @apply
+      max-w-[312px]
+      rounded-2xl
+      pb-5
+      px-5
+      min-[600px]:p-5
+      pt-0
+      bg_glass
+      border
+      border-white
+      my-10
+      min-[600px]:m-5
+      min-[600px]:max-w-[608px];
+  }
+
+  .skill_card_header {
+    @apply
+      relative
+      flex
+      flex-col
+      items-center
+      default_title text-2xl;
+  }
+
+  .skill_card_title {
+    @apply
+      mt-2
+      min-[600px]:m-0
+    ;
+  }
+
+  .skill_card_body {
+    @apply
+      text-right
+      mb-8
+      min-[600px]:flex
+      min-[600px]:flex-row;
+  }
+
 }

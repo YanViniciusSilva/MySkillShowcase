@@ -6,13 +6,13 @@
 
   <nb-tabset class="generic_tabset mt-14">
     <nb-tab class="tab" tabTitle="Back">
-      <app-skill-cards></app-skill-cards>
+      <app-skill-cards [skill_area]="back_skills"></app-skill-cards>
     </nb-tab>
     <nb-tab class="tab" tabTitle="front">
-      <div></div>
+      <app-skill-cards [skill_area]="front_skills"></app-skill-cards>
     </nb-tab>
     <nb-tab class="tab" tabTitle="extras">
-      <div></div>
+      <app-skill-cards [skill_area]="extra_skills"></app-skill-cards>
     </nb-tab>
   </nb-tabset>
 

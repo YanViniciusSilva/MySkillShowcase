@@ -1,25 +1,30 @@
 <section class="flex w-full justify-center items-center">
-  <div class="flex flex-col flex-wrap justify-evenly items-center mt-20">
-    <nb-card class="max-w-[312px] rounded-2xl pb-5 px-5 pt-0 bg_glass border border-white">
+  <div class="flex flex-row flex-wrap justify-center items-center mt-20">
+    <div *ngFor="let skill of skills">
+    <nb-card
+      *ngIf="skill.skill_area == skill_area ? true : false"
+      class="skill_card animate-slideUp"
+      [scrollLeft]="false"
+    >
       <nb-card-header class="">
-        <div class="relative -top-14 flex flex-col items-center default_title text-2xl">
+        <div class="skill_card_header {{resizeCard ? '-top-14' : 'min-[600px]:pb-6' }}">
           <svg-icon
-            src="../../../../assets/sections-images/tecnologies-imgs/cards/notebook.svg"
-            [svgStyle]="{'max-width.px': 164}"
+            [src]="skill.image"
+            [svgStyle]="{'max-width.px': 164, 'max-height.px': 164}"
+            *ngIf="resizeCard"
           ></svg-icon>
-          <h2 >Lógica de programação</h2>
+          <h2 class="skill_card_title">{{skill.title}}</h2>
         </div>
       </nb-card-header>
-      <nb-card-body class="text-right mb-8">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Molestias, ratione suscipit. Nesciunt quisquam velit
-          recusandae tempora voluptatem praesentium officia
-          reprehenderit unde. Eaque nisi dolores odio officiis
-          nemo ut libero earum.
-        </p>
+      <nb-card-body class="skill_card_body">
+        <svg-icon
+            [src]="skill.image"
+            [svgStyle]="{'max-width.px': 164, 'max-height.px': 164}"
+            *ngIf="!resizeCard"
+          ></svg-icon>
+        <span [innerHTML]="skill.description"></span>
       </nb-card-body>
     </nb-card>
-
+    </div>
   </div>
 </section>

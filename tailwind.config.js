@@ -55,13 +55,36 @@ module.exports = {
           '25%' : { transform: 'rotate(0deg)' },
           '50%' : { transform: 'rotate(10deg)' },
           '100%' : { transform: 'rotate(0deg)' },
+        },
+        slideInUp: {
+          '0%': {
+            transform: 'translateY(100%)',
+            transform: 'translateY(100%)',
+            visibility: 'visible'
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            transform: 'translateY(0)'
+          }
+        },
+        slideInUpTransition: {
+          '0%': {
+            transform: 'translateY(100%)',
+            transform: 'translateY(100%)',
+            visibility: 'visible',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            transform: 'translateY(0)'
+          }
         }
-      },
+    },
       animation: {
         'typing' : 'typing 3s steps(22), blinking 0.5s',
         'typing-no-border' : 'typing_no_border 1s steps(4) infinite',
         'rotate' : 'rotate 0.3s',
-        'blinking' : 'blinking 0.5s infinite'
+        'blinking' : 'blinking 0.5s infinite',
+        'slideUp': 'slideInUp 1s both, slideInUpTransition 1s both'
       }
     },
     fontFamily: {
