@@ -43,8 +43,8 @@
       dark:fill-dark-icon_color
       dark:bg-dark-icon_bg
 
-      hover:transition-all
-      hover:ease-in-out
+      transition-all
+      ease-in-out
       hover:translate-y-2
       hover:scale-125
       hover:bg_theme;
@@ -57,15 +57,19 @@
    /* degradê tema */
    .bg_theme {
     @apply
-      /* bg-gradient-to-br from-indigo-600 via-fuchsia-600 to-pink-600 */
-      bg-gradient-to-br from-[#8000FF] via-[#BD00FF] to-[#FF007A]
+      bg-red-600
+      dark:bg-indigo-600
     ;
   }
 
   .bg_glass {
     @apply
+    border
+    border-[#00000033]
+    dark:border-[#C0C0C044]
     bg-transparent
-    bg-gradient-to-br from-[#C0C0C01A] via-[#C0C0C066] to-[#C0C0C01A];
+    bg-gradient-to-br dark:from-[#C0C0C00D] from-[#0000000D] dark:via-[#C0C0C033] via-[#00000033] dark:to-[#C0C0C00D] to-[#0000000D]
+    backdrop-blur-sm;
   }
 
   /* estilo padrão de botões */
@@ -92,12 +96,12 @@
       md:w-40
 
       /* hover */
-      hover:transition-all
+      transition-all
+      ease-in-out
       hover:bg_theme
-      hover:ease-in-out
       active:translate-y-1
       active:text-white
-      hover:text-white
+      /* hover:text-white */
       hover:cursor-pointer;
   }
 
@@ -190,8 +194,6 @@
       min-[600px]:p-5
       pt-0
       bg_glass
-      border
-      border-white
       my-10
       min-[600px]:m-5
       min-[600px]:max-w-[608px];

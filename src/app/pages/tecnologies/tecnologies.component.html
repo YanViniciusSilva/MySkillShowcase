@@ -1,10 +1,10 @@
 <section class="flex flex-col w-full">
-  <div class="flex items-center justify-center w-full flex-col bg-transparent mt-16">
+  <div class="flex items-center justify-center w-full flex-col bg-transparent mt-32 backdrop-blur-sm">
     <h1 class="default_title">Skill Cards</h1>
     <p class="default_text text-center">Abaixo você pode conferir algumas das minhas skills e tecnologias que domino!</p>
   </div>
 
-  <nb-tabset class="generic_tabset mt-14">
+  <nb-tabset class="generic_tabset mt-14" [scrollLeft]="false" [scrollTop]="false">
     <nb-tab class="tab" tabTitle="Back">
       <app-skill-cards [skill_area]="back_skills"></app-skill-cards>
     </nb-tab>
@@ -15,5 +15,4 @@
       <app-skill-cards [skill_area]="extra_skills"></app-skill-cards>
     </nb-tab>
   </nb-tabset>
-
 </section>
