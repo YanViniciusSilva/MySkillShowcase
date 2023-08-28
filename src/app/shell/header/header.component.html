@@ -2,8 +2,8 @@
   <div class="flex flex-col items-center justify-evenly transition-all ease-in-out">
 
     <div class="flex w-full flex-col justify-center items-center transition-all ease-in-out duration-700   {{!visibility ? '-mt-5 -mb-16 delay-100 bg-[#0000004D] h-52' : 'h-[276px] mt-14'}}">
-    <div class="flex relative justify-center items-center w-36 h-36 rounded-full mb-4 p-0.5 bg_theme" *ngIf="visibility" >
-      <img class="w-full rounded-full" src="assets/foto-square.png"/>
+    <div class="flex relative justify-center items-center w-36 h-36 rounded-full mb-4 p-0.5 " *ngIf="visibility" >
+      <img class="w-full rounded-full" src="assets/me.jpeg"/>
     </div>
 
     <div>
@@ -23,14 +23,14 @@
     </div>
 
     <nb-tabset class="generic_tabset" (changeTab)="hideElements($event)" [scrollLeft]="false" [scrollTop]="false">
-      <nb-tab [tabTitle]="this.language.header.sections_btn.about_me" class="tab">
+      <nb-tab [tabTitle]="this.language.header.sections_btn.about_me" [scrollLeft]="false" [scrollTop]="false" class="tab">
         <app-about-me></app-about-me>
       </nb-tab>
-      <nb-tab [tabTitle]="this.language.header.sections_btn.tecnologies" class="tab">
+      <nb-tab [tabTitle]="this.language.header.sections_btn.tecnologies" [scrollLeft]="false" [scrollTop]="false" class="tab">
         <app-tecnologies></app-tecnologies>
       </nb-tab>
-      <nb-tab [tabTitle]="this.language.header.sections_btn.projects" class="tab">
-        {{this.language.header.sections_btn.projects}}
+      <nb-tab [tabTitle]="this.language.header.sections_btn.projects" [scrollLeft]="false" [scrollTop]="false" class="tab">
+        <app-projects></app-projects>
       </nb-tab>
     </nb-tabset>
   </div>

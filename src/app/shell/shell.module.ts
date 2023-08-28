@@ -12,6 +12,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { TecnologiesComponent } from '../pages/tecnologies/tecnologies.component';
 import { SkillCardsComponent } from '../pages/tecnologies/skill-cards/skill-cards.component';
+import { ProjectsComponent } from '../pages/projects/projects.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SkillCardsComponent } from '../pages/tecnologies/skill-cards/skill-card
     AboutMeComponent,
     HeaderComponent,
     TecnologiesComponent,
-    SkillCardsComponent
+    SkillCardsComponent,
+    ProjectsComponent
   ],
   imports: [
     CommonModule,

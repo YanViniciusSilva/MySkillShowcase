@@ -196,4 +196,19 @@ export const skillsContent:SkillContentModel[] = [
     monst_used: false,
     skill_area: EnumSkillArea.front
   },
+  {
+    title: 'Postgree',
+    description: `
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Molestias, ratione suscipit. Nesciunt quisquam velit
+        recusandae tempora voluptatem praesentium officia
+        reprehenderit unde. Eaque nisi dolores odio officiis
+        nemo ut libero earum.
+      </p>
+    `,
+    image: 'assets/sections-images/tecnologies-imgs/cards/postgree.svg',
+    monst_used: false,
+    skill_area: EnumSkillArea.extra
+  },
 ];

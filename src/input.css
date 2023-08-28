@@ -149,13 +149,13 @@
       /* flex-col */
       items-center
       justify-center
-      w-screen
+      /* w-fit */
       default_text
-      mx-auto
+      /* mx-auto */
     ;
   }
 
-  .generic_tabset ul {
+  .generic_tabset ul:not(.timeline-ul) {
     @apply
       flex
       w-screen
@@ -164,7 +164,7 @@
     ;
   }
 
-  .generic_tabset li {
+  .generic_tabset li:not(.timeline-ul-li) {
     @apply
       flex
       items-center
@@ -175,13 +175,16 @@
 
   .tab {
     @apply
-      flex
+      /* flex */
+      overflow-hidden
       transition-all
     ;
   }
 
   .tab.active {
-    @apply bg_theme;
+    @apply
+      overflow-hidden
+      bg_theme;
   }
 
   /* Cards */
@@ -221,6 +224,104 @@
       mb-8
       min-[600px]:flex
       min-[600px]:flex-row;
+  }
+
+  /* timeline da aba projetos */
+  .timeline {
+    @apply
+      relative
+      mt-4
+      md:mx-auto
+      ml-5
+      w-full
+      py-40
+      px-0
+
+      /* before:flex */
+      before:absolute
+      /* before:left-3 */
+      md:before:left-1/2
+      before:w-[2px]
+      before:h-full
+      before:bg-white
+
+    ;
+  }
+
+  .timeline-ul {
+    @apply
+      m-0
+      p-0
+    ;
+  }
+
+  .timeline-ul-li {
+    @apply
+      list-none
+      relative
+      w-full
+      md:w-1/2
+      py-[20px]
+      px-[40px]
+      box-border
+    ;
+  }
+
+  .timeline-ul-li:nth-child(odd) {
+    @apply
+      md:float-left
+      float-right
+      md:text-right
+      text-left
+      clear-both
+      flex
+      md:justify-end
+      justify-center
+
+
+      before:absolute
+      before:w-[10px]
+      before:h-[10px]
+      before:bg-white
+      before:rounded-full
+      before:shadow-lg
+      before:top-[24px]
+      before:-left-1
+      md:before:left-[99.5%]
+
+      /* md:before:-right-[6px] */
+    ;
+  }
+
+  .timeline-ul-li:nth-child(even) {
+    @apply
+      float-right
+      text-left
+      clear-both
+      flex
+      md:justify-start
+      justify-center
+
+      before:absolute
+      before:w-[10px]
+      before:h-[10px]
+      before:bg-white
+      before:rounded-full
+      before:shadow-lg
+      before:top-[24px]
+      before:-left-1
+      md:before:-left-[4px]
+    ;
+  }
+
+  .project {
+    @apply
+      relative
+      w-full
+      md:w-2/3
+      /* m-auto */
+
+    ;
   }
 
 }
