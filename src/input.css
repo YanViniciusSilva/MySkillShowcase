@@ -83,6 +83,7 @@
       w-full
       text-center
       font-medium
+      whitespace-nowrap
 
       /* tema light */
       bg-light-btn_bg
