@@ -100,7 +100,7 @@
       ease-in-out
       hover:bg_theme
       active:translate-y-1
-      active:text-white
+      /* active:text-white */
       /* hover:text-white */
       hover:cursor-pointer;
   }
@@ -183,8 +183,9 @@
 
   .tab.active {
     @apply
+      bg-gradient-to-br dark:from-indigo-600 from-red-600 dark:to-indigo-600 to-red-600
       overflow-hidden
-      bg_theme;
+    ;
   }
 
   /* Cards */
@@ -231,11 +232,12 @@
     @apply
       relative
       mt-4
-      md:mx-auto
-      ml-5
+      mx-auto
+      /* ml-5 */
       w-full
-      py-40
-      px-0
+      py-16
+      pl-2
+      md:px-0
 
       /* before:flex */
       before:absolute
@@ -262,7 +264,8 @@
       w-full
       md:w-1/2
       py-[20px]
-      px-[40px]
+      px-[20px]
+      md:px-[40px]
       box-border
     ;
   }
@@ -318,9 +321,63 @@
     @apply
       relative
       w-full
-      md:w-2/3
+      /* md:w-2/3 */
+      max-w-[450px]
+      bg_glass
+      py-4
+      px-4
+      md:px-8
+      rounded-[5px]
       /* m-auto */
 
+      /* animate-slideUp */
+    ;
+  }
+
+  .project-body {
+    @apply
+      my-10
+    ;
+  }
+
+  .project-body h2 {
+    @apply
+      text-2xl
+      my-3
+    ;
+  }
+
+  .project-footer a {
+    @apply
+      flex
+      flex-row
+      justify-between
+      items-center
+      text-left
+      py-2
+      px-4
+      w-full
+      bg-transparent
+      border
+      border-white
+      rounded-[5px]
+      my-5
+      h-[89px]
+
+      transition-all
+      duration-300
+      cursor-pointer
+      hover:bg_glass
+    ;
+  }
+
+  .project-footer a span {
+    @apply
+      overflow-hidden
+      text-ellipsis
+      text-base
+      whitespace-nowrap
+      max-w-[300px]
     ;
   }
 

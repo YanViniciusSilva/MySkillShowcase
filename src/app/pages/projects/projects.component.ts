@@ -1,3 +1,5 @@
+import { list } from 'postcss';
+import { projectsContent } from './projects-content';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,5 +7,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
+
+  readonly projects = projectsContent ;
+
+  ngOnInit(): void {
+    this.scrollAnimation()
+  }
+
+
+  scrollAnimation() {}
 }

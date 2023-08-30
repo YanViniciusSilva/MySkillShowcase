@@ -22,16 +22,30 @@
     </div>
     </div>
 
-    <nb-tabset class="generic_tabset" (changeTab)="hideElements($event)" [scrollLeft]="false" [scrollTop]="false">
-      <nb-tab [tabTitle]="this.language.header.sections_btn.about_me" [scrollLeft]="false" [scrollTop]="false" class="tab">
-        <app-about-me></app-about-me>
-      </nb-tab>
-      <nb-tab [tabTitle]="this.language.header.sections_btn.tecnologies" [scrollLeft]="false" [scrollTop]="false" class="tab">
-        <app-tecnologies></app-tecnologies>
-      </nb-tab>
-      <nb-tab [tabTitle]="this.language.header.sections_btn.projects" [scrollLeft]="false" [scrollTop]="false" class="tab">
-        <app-projects></app-projects>
-      </nb-tab>
-    </nb-tabset>
+    <nav>
+      <div class="generic_tabset">
+        <a
+          class="btn_theme"
+          [ngClass]="{'tab active' : btn.id === currentTab}"
+          *ngFor="let btn of btn_contents"
+          (click)="changeTab(btn.id)"
+        >
+          {{btn.btn}}
+        </a>
+      </div>
+    </nav>
+
+    <div
+      class="generic_tabset"
+    >
+      <main
+        class="tab"
+        [ngSwitch]="currentTab"
+      >
+        <app-about-me *ngSwitchCase="TabsEnum.about"></app-about-me>
+        <app-tecnologies *ngSwitchCase="TabsEnum.tecnologies"></app-tecnologies>
+        <app-projects *ngSwitchCase="TabsEnum.projects"></app-projects>
+      </main>
+    </div>
   </div>
 </section>

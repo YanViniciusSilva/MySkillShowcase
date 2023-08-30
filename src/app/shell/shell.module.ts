@@ -7,12 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NbThemeModule, NbTabsetModule, NbCardModule } from '@nebular/theme';
 import { NgIconsModule } from '@ng-icons/core';
-import { heroMoon, heroSun } from '@ng-icons/heroicons/outline';
+import { heroCodeBracket, heroMoon, heroSun } from '@ng-icons/heroicons/outline';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { TecnologiesComponent } from '../pages/tecnologies/tecnologies.component';
 import { SkillCardsComponent } from '../pages/tecnologies/skill-cards/skill-cards.component';
 import { ProjectsComponent } from '../pages/projects/projects.component';
+import { octMarkGithub } from '@ng-icons/octicons';
 
 
 @NgModule({
@@ -28,7 +29,13 @@ import { ProjectsComponent } from '../pages/projects/projects.component';
     ShellRoutingModule,
     NgSelectModule,
     ReactiveFormsModule,
-    NgIconsModule.withIcons({ heroMoon, heroSun }),
+    NgIconsModule.withIcons({
+      heroMoon,
+      heroSun ,
+      heroCodeBracket,
+      octMarkGithub
+
+    }),
     AngularSvgIconModule.forRoot(),
     NbThemeModule.forRoot(),
     NbTabsetModule,

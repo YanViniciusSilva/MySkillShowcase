@@ -5,8 +5,7 @@ import { HeaderComponent } from './header/header.component';
 const routes: Routes = [
   {
     path: '',
-    pathMatch: 'full',
-    component: HeaderComponent
+    component: HeaderComponent,
   }
 ];
 

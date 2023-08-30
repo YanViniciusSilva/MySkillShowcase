@@ -1,17 +1,19 @@
-import { Component, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { languages } from 'src/app/languages/languages';
 import { environment } from 'src/environments/environment';
+import { TabsEnum } from '../enums/tabs';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 
-  language = environment.translation
+  language = environment.translation;
 
-  visibility:boolean = true
+  visibility:boolean;
 
   date = new Date();
   month = this.date.getMonth();
@@ -31,26 +33,39 @@ export class HeaderComponent {
       link: 'mailto:yanviniciusjesussilva@gmail.com',
       image: 'assets/gmail.svg'
     }
-  ]
+  ];
 
   btn_contents = [
     {
+      id: 1,
       btn: this.language.header.sections_btn.about_me,
-      redirect: '/about-me'
     },
     {
+      id: 2,
       btn: this.language.header.sections_btn.tecnologies,
-      redirect: '/tecnologies'
     },
     {
+      id: 3,
       btn: this.language.header.sections_btn.projects,
-      redirect: ''
     }
-  ]
+  ];
 
-  constructor() {
-    if(document.URL.includes('tecnologies')){
-      this.visibility = false;
+  readonly TabsEnum = TabsEnum;
+
+  currentTab:TabsEnum;
+  lastTabAcessed: string = localStorage.getItem('lastTabAcessed');
+
+  constructor( public _route: Router) {}
+
+  ngOnInit(): void {
+    if(this.lastTabAcessed) {
+      this.btn_contents.forEach((item) => {
+        if(this.lastTabAcessed == item.id.toString()) {
+          this.changeTab(item.id);
+        }
+      })
+    } else {
+      this.changeTab(TabsEnum.about);
     }
   }
 
@@ -62,11 +77,18 @@ export class HeaderComponent {
     open(link, '_blank')
   }
 
-  hideElements(event) {
-    if(event.tabTitle == this.language.header.sections_btn.tecnologies || event.tabTitle == this.language.header.sections_btn.projects){
-      this.visibility = false;
-    } else {
-      this.visibility = true;
+  changeTab(tab: TabsEnum) {
+    if (tab == this.currentTab) {
+      return void 0;
     }
+
+    if(tab == TabsEnum.about) {
+      this.visibility = true;
+    } else {
+      this.visibility = false;
+    }
+
+    this.currentTab = tab;
+    localStorage.setItem('lastTabAcessed', this.currentTab.toString())
   }
 }
