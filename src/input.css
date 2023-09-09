@@ -66,9 +66,19 @@
     @apply
     border
     border-[#00000033]
-    dark:border-[#C0C0C044]
+    dark:border-[#C0C0C033]
     bg-transparent
     bg-gradient-to-br dark:from-[#C0C0C00D] from-[#0000000D] dark:via-[#C0C0C033] via-[#00000033] dark:to-[#C0C0C00D] to-[#0000000D]
+    backdrop-blur-sm;
+  }
+
+  .bg_glass_hover {
+    @apply
+    border
+    border-[#00000033]
+    dark:border-[#C0C0C033]
+    bg-transparent
+    bg-gradient-to-br dark:from-[#C0C0C033] from-[#0000000D] dark:via-[#c0c0c00e] via-[#00000033] dark:to-[#C0C0C033] to-[#0000000D]
     backdrop-blur-sm;
   }
 
@@ -81,6 +91,7 @@
       font-ubuntu
       m-2
       w-full
+      min-w-[100px]
       text-center
       font-medium
       whitespace-nowrap
@@ -185,7 +196,6 @@
   .tab.active {
     @apply
       bg-gradient-to-br dark:from-indigo-600 from-red-600 dark:to-indigo-600 to-red-600
-      overflow-hidden
     ;
   }
 
@@ -193,7 +203,7 @@
   .skill_card {
     @apply
       max-w-[312px]
-      rounded-2xl
+      rounded-md
       pb-5
       px-5
       min-[600px]:p-5
@@ -382,4 +392,9 @@
     ;
   }
 
+
+  /*Carousel*/
+  c-carousel-caption {
+    @apply before:contents;
+  }
 }

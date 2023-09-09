@@ -13,6 +13,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './shared-components/loading/loading.component';
 import { NgModule } from '@angular/core';
 import { NbTabsetModule, NbThemeModule } from '@nebular/theme';
+import { provideAnimations } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { NbTabsetModule, NbThemeModule } from '@nebular/theme';
     NbThemeModule.forRoot(),
     NbTabsetModule,
   ],
-  providers: [],
+  providers: [provideAnimations()],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

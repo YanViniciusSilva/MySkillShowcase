@@ -19,9 +19,8 @@ export class SkillCardsComponent implements OnInit{
   }
 
   onResizable() {
-    let size;
     addEventListener("resize", () => {
-      size = window.innerWidth;
+      const size = window.innerWidth;
       this.resizeCard = size <= 600 ? true : false;
     });
   }

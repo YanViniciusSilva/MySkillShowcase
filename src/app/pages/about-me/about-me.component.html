@@ -1,7 +1,28 @@
-<section class="flex flex-col w-screen">
+<section class="flex flex-col w-full">
   <div class="flex items-center justify-center w-full flex-col bg-transparent mt-12 backdrop-blur-sm">
     <h1 class="default_title">Sobre mim</h1>
     <p class="default_text text-center">Um pouco sobre quem eu sou.</p>
   </div>
 
+  <div class="flex w-full items-center justify-center my-12">
+  <c-carousel
+    id="carousel"
+    class="w-full mx-auto max-w-[1000px] min-h-[320px] rounded-md transition-all bg_glass backdrop-blur-sm"
+    [interval]="7000"
+  >
+    <c-carousel-inner class="relative w-[90%] {{ !resizeCarousel ? 'min-h-[320px]' : 'min-h-[500px] text-justify' }}">
+      <c-carousel-item class="h-[320px] py-[5%]" *ngFor="let slide of slides">
+        <div class="flex {{ !resizeCarousel ? 'flex-row' : 'flex-col' }} items-center w-fit mx-auto max-w-[75%]">
+          <svg-icon
+            [src]="slide.image"
+            class="{{ !resizeCarousel ? 'mr-8' : 'mr-0' }} translate-y-0 animate-flutuo"
+          ></svg-icon>
+          <p class="m-0" >{{slide.description}}</p>
+        </div>
+      </c-carousel-item>
+    </c-carousel-inner>
+    <c-carousel-control [routerLink] caption="Previous" direction="prev" class="max-w-[5%] hover:scale-150"><ng-icon [name]="'heroChevronLeft'"></ng-icon></c-carousel-control>
+    <c-carousel-control [routerLink] caption="Next" direction="next" class="max-w-[5%] hover:scale-150"><ng-icon [name]="'heroChevronRight'"></ng-icon></c-carousel-control>
+  </c-carousel>
+  </div>
 </section>
