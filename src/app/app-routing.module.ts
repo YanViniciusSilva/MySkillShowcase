@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./shell/shell.module').then(m => m.ShellModule),
   },
+  {
+    path: '',
+    pathMatch: 'full',
+    redirectTo: ''
+  }
 
 ];
 

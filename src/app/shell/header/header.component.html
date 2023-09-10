@@ -1,39 +1,42 @@
 <section class="flex flex-col w-full items-center justify-center">
   <div class="flex flex-col items-center justify-evenly w-full transition-all ease-in-out">
 
-    <div class="flex w-full flex-col justify-center items-center transition-all ease-in-out duration-700   {{!visibility ? '-mt-5 -mb-16 delay-100 bg-[#0000004D] h-52' : 'h-fit mt-14'}}">
-    <div class="flex relative justify-center items-center w-36 h-36 rounded-full mb-4 p-0.5 " *ngIf="visibility" >
-      <img class="w-full rounded-full" src="assets/me.jpeg"/>
+    <div ngClass="flex w-full flex-col justify-center items-center pb-5 pt-11 transition-all duration-1000 {{!visibility ? 'ease-in bg-[#0000004D]' : 'ease-out'}}">
+
+      <div class="relative flex w-fit items-center flex-col transition-all duration-500 {{!visibility ? 'h-[0px] delay-300 ease-out' : 'h-[188px] ease-in'}}">
+        <div ngClass="flex relative justify-center items-center w-fit rounded-full transition-all duration-150 {{!visibility ? 'opacity-0 ease-in delay-0 h-0' : 'opacity-100 mb-4 p-0.5 w-36 h-36 ease-out delay-500'}}">
+          <img class="relative max-w-[144px] rounded-full" src="assets/me.jpeg"/>
+        </div>
+
+        <div>
+          <p ngClass="relative default_text transition-all duration-150 {{!visibility ? 'opacity-0 ease-in delay-0 h-0' : 'opacity-100 ease-out delay-500 animation_style_typing'}}">
+            {{language.header.saudation}}
+          </p>
+        </div>
     </div>
 
-    <div>
-      <p class="relative default_text animation_style_typing" *ngIf="visibility">
-        {{language.header.saudation}}
-      </p>
-    </div>
-
-    <div class="flex flex-row justify-evenly w-72 p-5">
-      <svg-icon
-        class="social_icons"
-        *ngFor="let social of socialMidiaLinks"
-        (click)="navigate(social.link)"
-        [src]="social.image"
-      />
-    </div>
-    </div>
-
-    <nav>
-      <div class="generic_tabset">
-        <a
-          class="btn_theme"
-          [ngClass]="{'tab active' : btn.id === currentTab}"
-          *ngFor="let btn of btn_contents"
-          (click)="changeTab(btn.id)"
-        >
-          {{btn.btn}}
-        </a>
+      <div class="flex flex-row justify-evenly w-72 p-5">
+        <svg-icon
+          class="social_icons"
+          *ngFor="let social of socialMidiaLinks"
+          (click)="navigate(social.link)"
+          [src]="social.image"
+        />
       </div>
-    </nav>
+
+      <nav>
+        <div class="generic_tabset">
+          <a
+            class="btn_theme"
+            [ngClass]="{'tab active' : btn.id === currentTab}"
+            *ngFor="let btn of btn_contents"
+            (click)="changeTab(btn.id)"
+          >
+            {{btn.btn}}
+          </a>
+        </div>
+      </nav>
+    </div>
 
     <div
       class="generic_tabset"

@@ -7,7 +7,13 @@ import { HeaderComponent } from './header/header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NbThemeModule, NbTabsetModule, NbCardModule } from '@nebular/theme';
 import { NgIconsModule } from '@ng-icons/core';
-import { heroChevronLeft, heroChevronRight, heroCodeBracket, heroMoon, heroSun } from '@ng-icons/heroicons/outline';
+import {
+  heroChevronLeft,
+  heroChevronRight,
+  heroCodeBracket,
+  heroMoon,
+  heroSun
+} from '@ng-icons/heroicons/outline';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { TecnologiesComponent } from '../pages/tecnologies/tecnologies.component';
@@ -15,8 +21,6 @@ import { SkillCardsComponent } from '../pages/tecnologies/skill-cards/skill-card
 import { ProjectsComponent } from '../pages/projects/projects.component';
 import { octMarkGithub } from '@ng-icons/octicons';
 import { CarouselModule } from '@coreui/angular';
-
-
 @NgModule({
   declarations: [
     AboutMeComponent,
