@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Output, OnInit, EventEmitter } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -6,24 +6,17 @@ import { environment } from 'src/environments/environment';
   templateUrl: './loading.component.html',
   styleUrls: ['./loading.component.scss']
 })
-export class LoadingComponent {
-
-  @Input()
-  Loading: boolean
-
+export class LoadingComponent implements OnInit {
+  @Output() isLoading: EventEmitter<boolean> = new EventEmitter();
 
   language = environment.translation;
+  loadingGif: string = `assets/loading2.gif`;
 
-  get loadingGif() {
-    if(localStorage.getItem('theme') == 'light'){
-      return 'assets/loading.gif';
-    } else {
-      return 'assets/loading-dark.gif';
-    }
+  ngOnInit(): void {
+    window.addEventListener("load", () => {
+      setInterval(() => {
+        this.isLoading.emit(true);
+      }, 1000)
+    })
   }
-
-  get isLoading() {
-    return this.Loading
-  }
-
 }

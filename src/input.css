@@ -82,6 +82,23 @@
     backdrop-blur-sm;
   }
 
+  .bg_principal {
+    @apply
+      dark:bg-[url('src/assets/sections-images/tecnologies-imgs/tecnologies-bg-dark.jpg')]
+      bg-[url('src/assets/sections-images/tecnologies-imgs/tecnologies-bg-light.jpg')]
+
+      dark:bg-[#171f2c]
+      bg-[#260450]
+
+      bg-no-repeat
+      bg-fixed
+      bg-cover
+      bg-center
+      bg-blend-difference
+      dark:bg-blend-hard-light
+    ;
+  }
+
   /* estilo padrão de botões */
   .btn_theme {
     @apply
@@ -90,7 +107,6 @@
       py-1
       font-ubuntu
       m-2
-      w-full
       min-w-[100px]
       text-center
       font-medium

@@ -9,5 +9,7 @@ export const languages = (lang: string) => {
       return english
     case 'PT-BR':
       return portuguese;
+    default:
+      return portuguese;
   }
 }

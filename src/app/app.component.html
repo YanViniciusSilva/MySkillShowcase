@@ -1,3 +1,5 @@
-<app-loading [Loading]="false"></app-loading>
-<app-config-bar></app-config-bar>
-<router-outlet></router-outlet>
+<ng-template #loadingContent>
+  <app-loading (isLoading)="onLoaded()"></app-loading>
+</ng-template>
+<app-config-bar *ngIf="is_loaded; else loadingContent"></app-config-bar>
+<router-outlet *ngIf="is_loaded; else loadingContent"></router-outlet>

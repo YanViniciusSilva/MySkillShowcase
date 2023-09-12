@@ -7,4 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'portifolio';
+
+  is_loaded: boolean = false;
+
+  onLoaded(): boolean {
+    return this.is_loaded = true;
+  }
 }
