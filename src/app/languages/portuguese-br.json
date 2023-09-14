@@ -7,15 +7,28 @@
       "projects": "Projetos"
     }
   },
-  "about-me": {
+  "about_me": {
     "about_me_title": "Sobre mim",
     "about_me_subtitle": "Um pouco sobre quem eu sou",
     "about_me_banner" : {
       "about_my_person": "Nascido e criado na cidade de Santo André do estado de São Paulo, comecei a aprender programação aos 17 anos, desde então não parei mais, estou sempre buscando formas de melhorar como profissional e como pessoa!",
-      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes não é mesmo? Pra surpresa de zero pessoas as 'nerdices' são um fato indispensável sobre minha pessoa. E claro, com um ambiente descontraído e com boas conversas sobre, ja tem meu interesse na proposta!",
+      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes não é mesmo? Pra surpresa de zero pessoas as 'nerdices' são um fato indispensável sobre minha pessoa. One Piece é o melhor anime e Zelda a melhor franquia, indiscutível.",
       "about_carrer": "Por que escolhi ser programador?..liberdade! é quase poético que palavras numa tela te permitam criar praticamente qualquer coisa pra qualquer finalidade, é bizarramente legal! E eu adoro café...acho que é quase um pré-requisito não?"
     }
-
+  },
+  "skill_cards": {
+    "skills": {
+      "logic": "Boa base em lógica de programação com certificação online do curso em vídeo, curso técnico e atualmente ",
+      "nest_js": "Experiência na criação de API rest do zero, criação de Crud completo. Capaz de atender bem as possíveis necessidades.",
+      "java": "Experiência na criação e alteração de endpoint, Crud completo e bug-fixes.",
+      "javascript": "Experiência considerável no uso de javascript para animação, manipulação e formatação de dados, validações entre outros. Majoritariamente usado no front e no desenvolvimento de pequenas automações.",
+      "node_js": "Experiência básica na criação de API rest do zero e criação de endpoint.",
+      "angular": "Ampla experiência na criação de sites inteiros, participação em grandes projetos desenvolvidos em Angular, desde e-commerce a aplicações específicas.",
+      "rxjs": "",
+      "typescript": "",
+      "html_css": "",
+      "tailwind": ""
+    }
   },
   "loading": "Carregando"
 }

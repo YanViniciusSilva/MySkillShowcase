@@ -87,15 +87,15 @@
       dark:bg-[url('src/assets/sections-images/tecnologies-imgs/tecnologies-bg-dark.jpg')]
       bg-[url('src/assets/sections-images/tecnologies-imgs/tecnologies-bg-light.jpg')]
 
-      dark:bg-[#171f2c]
-      bg-[#260450]
+      /* dark:bg-[#171f2c]
+      bg-[#260450] */
 
       bg-no-repeat
       bg-fixed
       bg-cover
       bg-center
-      bg-blend-difference
-      dark:bg-blend-hard-light
+      /* bg-blend-difference
+      dark:bg-blend-hard-light */
     ;
   }
 

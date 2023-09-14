@@ -1,4 +1,5 @@
 import { SafeHtml } from "@angular/platform-browser";
+import { environment } from "src/environments/environment";
 
 export enum EnumSkillArea {
   back = 'BACKEND',
@@ -14,23 +15,20 @@ export interface SkillContentModel {
   skill_area: EnumSkillArea;
 }
 
+const lang = environment.translation;
 
 export const skillsContent:SkillContentModel[] = [
-  {
-    title: 'Lógica de programação',
-    description: `
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
-      </p>
-    `,
-    image: 'assets/sections-images/tecnologies-imgs/cards/notebook.svg',
-    monst_used: false,
-    skill_area: EnumSkillArea.back
-  },
+  // {
+  //   title: 'Lógica de programação',
+  //   description: `
+  //     <p>
+  //       ${lang.skill_cards.skills.logic}
+  //     </p>
+  //   `,
+  //   image: 'assets/sections-images/tecnologies-imgs/cards/notebook.svg',
+  //   monst_used: false,
+  //   skill_area: EnumSkillArea.back
+  // },
   {
     title: 'HTML + CSS',
     description: `
@@ -50,11 +48,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'NestJs Framework',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+      ${lang.skill_cards.skills.nest_js}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/nestjs.svg',
@@ -65,11 +59,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Angular Framework',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.skill_cards.skills.angular}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/angular.svg',
@@ -95,11 +85,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Java',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.skill_cards.skills.java}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/java.svg',
@@ -110,26 +96,18 @@ export const skillsContent:SkillContentModel[] = [
     title: 'JavaScript',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.skill_cards.skills.javascript}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/javascript.svg',
     monst_used: false,
-    skill_area: EnumSkillArea.back
+    skill_area: EnumSkillArea.front
   },
   {
     title: 'Node JS',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.skill_cards.skills.node_js}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/node.svg',
