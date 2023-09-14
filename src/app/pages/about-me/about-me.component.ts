@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-about-me',
@@ -6,36 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
+  readonly language = environment.translation;
   readonly slides = [
     {
       image: 'assets/sections-images/about-me-imgs/hobbies.svg',
-      description: `
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Magnam eveniet voluptate suscipit nihil eum commodi
-        repellat architecto, voluptatem, quisquam similique ad
-        ipsa soluta tempora non, unde amet repudiandae. In,
-        consequuntur!
-      `
+      description: this.language['about-me'].about_me_banner.about_hobbies
     },
     {
       image: 'assets/sections-images/about-me-imgs/gps.svg',
-      description: `
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Magnam eveniet voluptate suscipit nihil eum commodi
-        repellat architecto, voluptatem, quisquam similique ad
-        ipsa soluta tempora non, unde amet repudiandae. In,
-        consequuntur!
-      `
+      description: this.language['about-me'].about_me_banner.about_my_person
     },
     {
       image: 'assets/sections-images/about-me-imgs/cooffe.svg',
-      description: `
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Magnam eveniet voluptate suscipit nihil eum commodi
-        repellat architecto, voluptatem, quisquam similique ad
-        ipsa soluta tempora non, unde amet repudiandae. In,
-        consequuntur!
-      `
+      description: this.language['about-me'].about_me_banner.about_carrer
     }
   ];
 

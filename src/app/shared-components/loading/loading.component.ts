@@ -10,7 +10,7 @@ export class LoadingComponent implements OnInit {
   @Output() isLoading: EventEmitter<boolean> = new EventEmitter();
 
   language = environment.translation;
-  loadingGif: string = `assets/loading2.gif`;
+  loadingGif: string = `assets/loading.svg`;
 
   ngOnInit(): void {
     window.addEventListener("load", () => {

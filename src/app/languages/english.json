@@ -7,6 +7,15 @@
       "projects": "Projects"
     }
   },
-  "about_me_title": "About me",
+  "about-me": {
+    "about_me_title": "About me",
+    "about_me_subtitle": "A little information about me",
+    "about_me_banner" : {
+      "about_my_person": "Nascido e criado na cidade de Santo André São Paulo, comecei a aprender programação aos 17 anos, desde então não parei mais, estou sempre buscando formas de melhorar como profissional e como pessoa!",
+      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes? Pra surpresa de 0 pessoas as 'nerdices' são um fato indispensável sobre minha pessoa. E claro, com um ambiente descontraído e com boas conversas sobre, ja tem meu interesse na proposta!",
+      "about_carrer": "Por que escolhi ser programador?..liberdade! é quase poético que palavras numa tela te permitam criar praticamente qualquer coisa pra qualquer finalidade, é bizarramente legal! E eu adoro café...acho que é quase um pré-requisito não?"
+    }
+
+  },
   "loading": "Loading"
 }
