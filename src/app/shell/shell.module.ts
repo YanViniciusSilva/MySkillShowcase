@@ -28,7 +28,6 @@ import { CarouselModule } from '@coreui/angular';
     TecnologiesComponent,
     SkillCardsComponent,
     ProjectsComponent,
-
   ],
   imports: [
     CommonModule,

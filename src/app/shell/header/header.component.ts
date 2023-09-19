@@ -1,5 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Router, RouterLink } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { languages } from 'src/app/languages/languages';
 import { environment } from 'src/environments/environment';
 import { TabsEnum } from '../enums/tabs';
@@ -10,9 +10,6 @@ import { TabsEnum } from '../enums/tabs';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  // @Output() isLoading: boolean = false;
-
   language = environment.translation;
 
   visibility:boolean;
@@ -57,14 +54,6 @@ export class HeaderComponent implements OnInit {
   currentTab:TabsEnum;
   lastTabAcessed: string = localStorage.getItem('lastTabAcessed');
 
-  get loadingGif() {
-    if(localStorage.getItem('theme') == 'light'){
-      return 'assets/loading.gif';
-    } else {
-      return 'assets/loading-dark.gif';
-    }
-  }
-
   constructor( public _route: Router) {}
 
   ngOnInit(): void {
@@ -77,14 +66,6 @@ export class HeaderComponent implements OnInit {
     } else {
       this.changeTab(TabsEnum.about);
     }
-
-
-    // window.addEventListener("load", () => {
-    //   const delay = setInterval(() => {
-    //     this.iLoading = true;
-    //   }, 5000)
-    // })
-
   }
 
   get myAge() {

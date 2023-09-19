@@ -1,17 +1,7 @@
-<!-- <ng-template #loadingContent>
-  <div class="flex flex-col items-center justify-center absolute w-full h-full z-10 bg_glass">
-    <img class="w-28" [src]="loadingGif">
-    <div class="flex flex-row w-full justify-center">
-      <p class="default_text">{{language.loading}}...</p>
-      <p class="default_text animation_style_typing_without_border w-5">...</p>
-    </div>
-  </div>
-</ng-template> -->
-
 <section class="flex flex-col w-full items-center justify-center">
   <div class="flex flex-col items-center justify-evenly w-full transition-all ease-in-out">
 
-    <div ngClass="flex w-full flex-col justify-center items-center pb-5 pt-11 border-[0px] shadow-none transition-all duration-1000 {{!visibility ? 'ease-in bg_glass border-[0px]' : 'ease-out'}}">
+    <div ngClass="flex w-full flex-col justify-center items-center pb-5 pt-11 border-[0px] shadow-none transition-all duration-700 {{!visibility ? 'ease-in bg_glass border-[0px]' : 'ease-out'}}">
 
       <div class="relative flex w-fit items-center flex-col transition-all duration-500 {{!visibility ? 'h-[0px] delay-100 ease-out' : 'h-[188px] ease-in'}}">
         <div ngClass="flex relative justify-center items-center w-fit rounded-full transition-all duration-150 {{!visibility ? 'opacity-0 ease-in delay-0 h-0 after:hidden' : 'opacity-100 mb-4 p-0.5 w-36 h-36 ease-out delay-500'}}">
