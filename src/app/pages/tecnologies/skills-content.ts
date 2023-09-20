@@ -33,11 +33,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'HTML + CSS',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+       ${lang.tech_skills.skill_cards.skills.html_css}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/html_css.svg',
@@ -48,7 +44,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'NestJs Framework',
     description: `
       <p>
-      ${lang.skill_cards.skills.nest_js}
+      ${lang.tech_skills.skill_cards.skills.nest_js}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/nestjs.svg',
@@ -59,7 +55,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Angular Framework',
     description: `
       <p>
-        ${lang.skill_cards.skills.angular}
+        ${lang.tech_skills.skill_cards.skills.angular}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/angular.svg',
@@ -70,11 +66,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Firebase',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.tech_skills.skill_cards.skills.firebase}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/firebase.svg',
@@ -85,7 +77,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Java',
     description: `
       <p>
-        ${lang.skill_cards.skills.java}
+        ${lang.tech_skills.skill_cards.skills.java}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/java.svg',
@@ -96,7 +88,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'JavaScript',
     description: `
       <p>
-        ${lang.skill_cards.skills.javascript}
+        ${lang.tech_skills.skill_cards.skills.javascript}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/javascript.svg',
@@ -107,7 +99,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Node JS',
     description: `
       <p>
-        ${lang.skill_cards.skills.node_js}
+        ${lang.tech_skills.skill_cards.skills.node_js}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/node.svg',
@@ -118,11 +110,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'RxJS',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.tech_skills.skill_cards.skills.rxjs}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/rxjs.svg',
@@ -133,11 +121,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'SQL Server',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.tech_skills.skill_cards.skills.sql}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/sql.svg',
@@ -148,11 +132,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Typescript',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.tech_skills.skill_cards.skills.typescript}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/typescript.svg',
@@ -163,11 +143,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Tailwind',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.tech_skills.skill_cards.skills.tailwind}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/tailwind.svg',
@@ -178,11 +154,7 @@ export const skillsContent:SkillContentModel[] = [
     title: 'Postgree',
     description: `
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Molestias, ratione suscipit. Nesciunt quisquam velit
-        recusandae tempora voluptatem praesentium officia
-        reprehenderit unde. Eaque nisi dolores odio officiis
-        nemo ut libero earum.
+        ${lang.tech_skills.skill_cards.skills.postgresql}
       </p>
     `,
     image: 'assets/sections-images/tecnologies-imgs/cards/postgree.svg',

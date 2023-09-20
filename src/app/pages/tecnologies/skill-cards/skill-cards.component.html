@@ -6,7 +6,7 @@
       class="skill_card animate-slideUp"
       [scrollLeft]="false"
     >
-      <nb-card-header class="">
+      <nb-card-header >
         <div class="skill_card_header {{resizeCard ? '-top-14' : 'min-[600px]:pb-6' }}">
           <svg-icon
             [src]="skill.image"
@@ -21,8 +21,8 @@
             [src]="skill.image"
             [svgStyle]="{'max-width.px': 164, 'max-height.px': 164}"
             *ngIf="!resizeCard"
-          ></svg-icon>
-        <span class="flex items-center" [innerHTML]="skill.description"></span>
+        ></svg-icon>
+        <span class="flex items-center ml-0 min-[600px]:ml-3" [innerHTML]="skill.description"></span>
       </nb-card-body>
     </nb-card>
     </div>

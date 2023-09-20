@@ -19,7 +19,7 @@ export class AboutMeComponent implements OnInit {
     },
     {
       image: 'assets/sections-images/about-me-imgs/cooffe.svg',
-      description: this.language.about_me.about_me_banner.about_carrer
+      description: this.language.about_me.about_me_banner.about_career
     }
   ];
 

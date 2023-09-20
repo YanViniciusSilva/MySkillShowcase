@@ -1,33 +1,39 @@
 {
   "header": {
-    "saudation": "Sou Yan, Dev FullStack",
+    "greeting": "Sou Yan, Dev FullStack",
     "sections_btn": {
       "about_me": "Sobre mim",
-      "tecnologies": "Tecnologias",
+      "technologies": "Tecnologias",
       "projects": "Projetos"
     }
   },
   "about_me": {
     "about_me_title": "Sobre mim",
     "about_me_subtitle": "Um pouco sobre quem eu sou",
-    "about_me_banner" : {
-      "about_my_person": "Nascido e criado na cidade de Santo André do estado de São Paulo, comecei a aprender programação aos 17 anos, desde então não parei mais, estou sempre buscando formas de melhorar como profissional e como pessoa!",
-      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes não é mesmo? Pra surpresa de zero pessoas as 'nerdices' são um fato indispensável sobre minha pessoa. One Piece é o melhor anime e Zelda a melhor franquia, indiscutível.",
-      "about_carrer": "Por que escolhi ser programador?..liberdade! é quase poético que palavras numa tela te permitam criar praticamente qualquer coisa pra qualquer finalidade, é bizarramente legal! E eu adoro café...acho que é quase um pré-requisito não?"
+    "about_me_banner": {
+      "about_my_person": "Nascido e criado na cidade de Santo André, no estado de São Paulo, comecei a aprender programação aos 17 anos e desde então não parei mais. Estou sempre buscando formas de melhorar como profissional e como pessoa!",
+      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes, não é mesmo? Para surpresa de ninguém, as 'nerdices' são um fato indispensável sobre minha pessoa. One Piece é o melhor anime e Zelda é a melhor franquia, indiscutivelmente.",
+      "about_career": "Por que escolhi ser programador? Liberdade! É quase poético que palavras em uma tela te permitam criar praticamente qualquer coisa para qualquer finalidade. É bizarramente legal! E eu adoro café... Acho que é quase um pré-requisito, não é?"
     }
   },
-  "skill_cards": {
-    "skills": {
-      "logic": "Boa base em lógica de programação com certificação online do curso em vídeo, curso técnico e atualmente ",
-      "nest_js": "Experiência na criação de API rest do zero, criação de Crud completo. Capaz de atender bem as possíveis necessidades.",
-      "java": "Experiência na criação e alteração de endpoint, Crud completo e bug-fixes.",
-      "javascript": "Experiência considerável no uso de javascript para animação, manipulação e formatação de dados, validações entre outros. Majoritariamente usado no front e no desenvolvimento de pequenas automações.",
-      "node_js": "Experiência básica na criação de API rest do zero e criação de endpoint.",
-      "angular": "Ampla experiência na criação de sites inteiros, participação em grandes projetos desenvolvidos em Angular, desde e-commerce a aplicações específicas.",
-      "rxjs": "",
-      "typescript": "",
-      "html_css": "",
-      "tailwind": ""
+  "tech_skills": {
+    "subtitle": "Abaixo você pode conferir minhas habilidades em cada tecnologia que já usei!",
+    "skill_cards": {
+      "skills": {
+        "logic": "Boa base em lógica de programação com certificação online do curso em vídeo, curso técnico e atualmente.",
+        "nest_js": "Experiência na criação de API REST do zero, criação de CRUD completo. Capaz de atender bem às possíveis necessidades.",
+        "java": "Experiência na criação e alteração de endpoint, CRUD completo e correção de bugs.",
+        "javascript": "Experiência considerável no uso de javascript para animação, manipulação e formatação de dados, validações entre outros. Majoritariamente usado no front e no desenvolvimento de pequenas automações.",
+        "node_js": "Experiência básica na criação de API REST do zero e criação de endpoint.",
+        "angular": "Ampla experiência na criação de sites inteiros, participação em grandes projetos desenvolvidos em Angular, desde e-commerce a aplicações específicas.",
+        "rxjs": "Juntamente com angular tenho experiência na utilização de rxjs no tratamento de dados para a criação de aplicações reativas.",
+        "typescript": "Ampla experiência com tratamento e formatação de dados, criação de formulários e mais. Capaz de atender bem as possíveis necessidades.",
+        "html_css": "Ampla experiência com ambos, estando presente em todos os projetos web que desenvolvi além dos fundamentos aprendidos nas formações técnica e superior.",
+        "tailwind": "Experiência na estilização de components no html, criação de pré-sets, modo dark, entre outros. Inclusive, o site que está navegando agora foi estilizado com Tailwind.",
+        "postgresql": "Experiência na manipulação de dados, criação, edição, relacionamento, e outros. Capaz de atender as necessidades principais.",
+        "firebase": "Experiência com a manipulação de dados e desenvolvimento utilizando os serviços de Authentication, Firestore Database, Realtime Database, Hosting e Storage.",
+        "sql": "Muita experiência tanto na parte de manipulação quanto no desenvolvimento com criação de estruturas relacionais completas, consultas, procs, rotinas e outros. Capaz de atender a grande maioria das necessidades."
+      }
     }
   },
   "loading": "Carregando"

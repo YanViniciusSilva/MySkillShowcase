@@ -1,33 +1,39 @@
 {
   "header": {
-    "saudation": "I'm Yan Silva Dev FullStack",
+    "greeting": "I'm Yan, Full Stack Dev",
     "sections_btn": {
-      "about_me": "About me",
-      "tecnologies": "Tecnologies",
+      "about_me": "About Me",
+      "technologies": "Technologies",
       "projects": "Projects"
     }
   },
   "about_me": {
-    "about_me_title": "About me",
-    "about_me_subtitle": "A little information about me",
-    "about_me_banner" : {
-      "about_my_person": "Nascido e criado na cidade de Santo André São Paulo, comecei a aprender programação aos 17 anos, desde então não parei mais, estou sempre buscando formas de melhorar como profissional e como pessoa!",
-      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes? Pra surpresa de 0 pessoas as 'nerdices' são um fato indispensável sobre minha pessoa. E claro, com um ambiente descontraído e com boas conversas sobre, ja tem meu interesse na proposta!",
-      "about_carrer": "Por que escolhi ser programador?..liberdade! é quase poético que palavras numa tela te permitam criar praticamente qualquer coisa pra qualquer finalidade, é bizarramente legal! E eu adoro café...acho que é quase um pré-requisito não?"
+    "about_me_title": "About Me",
+    "about_me_subtitle": "A bit about who I am",
+    "about_me_banner": {
+      "about_my_person": "Born and raised in Santo André, São Paulo, I started learning programming at the age of 17, and I haven't stopped since. I'm always looking for ways to improve as a professional and as a person!",
+      "about_hobbies": "What would a programmer be without their games, series, and anime, right? To no one's surprise, 'nerdiness' is an essential part of who I am. One Piece is the best anime, and Zelda is the best franchise, indisputably.",
+      "about_career": "Why did I choose to be a programmer? Freedom! It's almost poetic that words on a screen allow you to create almost anything for any purpose. It's bizarrely cool! And I love coffee... I think it's almost a prerequisite, isn't it?"
     }
   },
-  "skill_cards": {
-    "skills": {
-      "logic": "",
-      "nest_js": "",
-      "java": "",
-      "javascript": "",
-      "node_js": "",
-      "angular": "Tenho ampla experiência na criação de sites inteiros, participação em projetos desenvolvidos em Angular, desde e-commerce a aplicações específicas.",
-      "rxjs": "",
-      "typescript": "",
-      "html_css": "",
-      "tailwind": ""
+  "tech_skills": {
+    "subtitle": "Below you can check out my skills in each technology I've used!",
+    "skill_cards": {
+      "skills": {
+        "logic": "Solid foundation in programming logic with online certification from video courses, technical courses, and currently in progress.",
+        "nest_js": "Experience in creating RESTful APIs from scratch, complete CRUD creation. Capable of meeting various needs.",
+        "java": "Experience in creating and modifying endpoints, complete CRUD, and bug fixes.",
+        "javascript": "Considerable experience in using JavaScript for animation, data manipulation, formatting, validations, and more. Mostly used in frontend development and for small automations.",
+        "node_js": "Basic experience in creating RESTful APIs from scratch and creating endpoints.",
+        "angular": "Extensive experience in building entire websites, participating in large projects developed in Angular, from e-commerce to specific applications.",
+        "rxjs": "Alongside Angular, I have experience in using RxJS for data handling to create reactive applications.",
+        "typescript": "Extensive experience in data handling, formatting, creating forms, and more. Capable of meeting various needs.",
+        "html_css": "Extensive experience with both, present in all web projects I've developed, in addition to the fundamentals learned in technical and higher education.",
+        "tailwind": "Experience in styling components in HTML, creating presets, dark mode, and more. In fact, the website you're currently browsing was styled with Tailwind.",
+        "postgresql": "Experience in data manipulation, creation, editing, relationships, and more. Capable of meeting core needs.",
+        "firebase": "Experience with data manipulation and development using Authentication, Firestore Database, Realtime Database, Hosting, and Storage services.",
+        "sql": "Extensive experience in both data manipulation and development, including creating complete relational structures, queries, stored procedures, routines, and more. Capable of meeting the vast majority of needs."
+      }
     }
   },
   "loading": "Loading"

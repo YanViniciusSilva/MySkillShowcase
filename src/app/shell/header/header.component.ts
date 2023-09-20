@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       id: 2,
-      btn: this.language.header.sections_btn.tecnologies,
+      btn: this.language.header.sections_btn.technologies,
     },
     {
       id: 3,

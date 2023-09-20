@@ -227,7 +227,7 @@
       bg_glass
       my-10
       min-[600px]:m-5
-      min-[600px]:max-w-[608px];
+      min-[600px]:max-w-[608px]
   }
 
   .skill_card_header {
@@ -248,7 +248,8 @@
 
   .skill_card_body {
     @apply
-      text-right
+      text-left
+      /* min-[600px]:text-right */
       mb-8
       min-[600px]:flex
       min-[600px]:flex-row;
