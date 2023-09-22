@@ -6,6 +6,7 @@ export interface ProjectsContentModel {
   project_git_url: string;
   year: number;
   isPrivate: boolean;
+  deployed: boolean;
 };
 
 export const projectsContent:ProjectsContentModel[] = [
@@ -19,9 +20,10 @@ export const projectsContent:ProjectsContentModel[] = [
     `,
     image: 'assets/sections-images/projects-imgs/pokedex.svg',
     project_url: 'www.pokedex.com',
-    project_git_url: 'https://github.com/YanViniciusSilva/PokedexAngular',
+    project_git_url: 'github.com/YanViniciusSilva/PokedexAngular',
     year: 2021,
-    isPrivate: false
+    isPrivate: false,
+    deployed: false
   },
   {
     title: 'Convite de casamento',
@@ -32,9 +34,10 @@ export const projectsContent:ProjectsContentModel[] = [
       impedit illo reprehenderit reiciendis? Fuga, cum expedita?
     `,
     image: 'assets/sections-images/projects-imgs/invite.svg',
-    project_url: 'https://wedding-inviters-list.firebaseapp.com/',
-    project_git_url: 'https://github.com/YanViniciusSilva/Wedding-invite',
+    project_url: 'wedding-inviters-list.firebaseapp.com',
+    project_git_url: 'github.com/YanViniciusSilva/Wedding-invite',
     year: 2021,
-    isPrivate: false
+    isPrivate: false,
+    deployed: true
   }
 ]

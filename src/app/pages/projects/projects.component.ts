@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   readonly projects = projectsContent ;
+
+  redirectTo(route: string) {
+    window.open('https://' + route, '_blank');
+  }
 }

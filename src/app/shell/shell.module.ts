@@ -40,7 +40,7 @@ import { CarouselModule } from '@coreui/angular';
       heroCodeBracket,
       octMarkGithub,
       heroChevronRight,
-      heroChevronLeft
+      heroChevronLeft,
     }),
     AngularSvgIconModule.forRoot(),
     NbThemeModule.forRoot(),

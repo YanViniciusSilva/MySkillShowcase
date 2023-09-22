@@ -17,23 +17,31 @@
             />
           </nb-card-header>
           <nb-card-body class="project-body">
-            <h2>{{project.title}}</h2>
+            <h2>{{project.title}} - {{project.year}}</h2>
             <p>
               {{project.description}}
             </p>
           </nb-card-body>
           <nb-card-footer class="project-footer">
-            <a [href]="project.project_url" target="_blank">
+            <button
+              (click)="redirectTo(project.project_url)"
+              [disabled]="!project.deployed"
+            >
               <span>
-                site <br>
-                {{project.project_url}}
+                site <br/>
+                {{project.deployed ? project.project_url : 'coming soon'}}
               </span>
               <ng-icon size="30px" name="heroCodeBracket"></ng-icon>
-            </a>
-            <a [href]="project.project_git_url" target="_blank">
-              <span>View on GitHub</span><br>
+            </button>
+            <button
+              (click)="redirectTo(project.project_git_url)"
+              [disabled]="project.isPrivate"
+            >
+              <span>
+                {{project.isPrivate ? 'This project is private' : 'View on GitHub'}}
+              </span><br>
               <ng-icon size="30px" name="octMarkGithub" ></ng-icon>
-            </a>
+            </button>
            </nb-card-footer>
         </nb-card>
       </li>
