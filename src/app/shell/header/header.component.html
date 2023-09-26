@@ -5,7 +5,7 @@
 
       <div class="relative flex w-fit items-center flex-col transition-all duration-500 {{!visibility ? 'h-[0px] delay-100 ease-out' : 'h-[188px] ease-in'}}">
         <div ngClass="flex relative justify-center items-center w-fit rounded-full transition-all duration-150 {{!visibility ? 'opacity-0 ease-in delay-0 h-0 after:hidden' : 'opacity-100 mb-4 p-0.5 w-36 h-36 ease-out delay-500'}}">
-          <img class="relative max-w-[144px] rounded-full" *ngIf="visibility" src="assets/me.jpeg"/>
+          <img class="relative w-[144px] h-[144px] rounded-full" alt="me" *ngIf="visibility" src="assets/me.jpeg"/>
         </div>
 
         <div>
@@ -26,14 +26,14 @@
 
       <nav>
         <div class="generic_tabset">
-          <a
+          <button
             class="btn_theme"
             [ngClass]="{'tab active' : btn.id === currentTab}"
             *ngFor="let btn of btn_contents"
             (click)="changeTab(btn.id)"
           >
             {{btn.btn}}
-          </a>
+          </button>
         </div>
       </nav>
     </div>

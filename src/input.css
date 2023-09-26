@@ -104,7 +104,7 @@
     @apply
       rounded-sm
       px-2
-      py-1
+      py-[6px]
       font-ubuntu
       m-2
       min-w-[100px]
