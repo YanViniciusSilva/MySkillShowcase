@@ -27,7 +27,7 @@ export class LoadingComponent implements OnInit {
   ngOnInit(): void {
     window.addEventListener("load", () => {
       this.isLoading.emit(true);
-    })
+    }, { passive: true })
   }
 
   setDarkTheme() {

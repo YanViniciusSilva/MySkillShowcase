@@ -33,6 +33,6 @@ export class AboutMeComponent implements OnInit {
     addEventListener("resize", () => {
       const size = window.innerWidth;
       this.resizeCarousel = size <= 600 ? true : false;
-    });
+    }, { passive: true });
   }
 }

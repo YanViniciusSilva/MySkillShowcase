@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { EnumSkillArea } from './skills-content';
 import { environment } from 'src/environments/environment';
 

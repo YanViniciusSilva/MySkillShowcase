@@ -84,18 +84,12 @@
 
   .bg_principal {
     @apply
-      dark:bg-[url('src/assets/sections-images/tecnologies-imgs/technologies-bg-dark.jpg')]
-      bg-[url('src/assets/sections-images/tecnologies-imgs/technologies-bg-light.jpg')]
-
-      /* dark:bg-[#171f2c]
-      bg-[#260450] */
-
+      bg-[url('./assets/sections-images/tecnologies-imgs/tecnologies-bg-light.webp')]
+      dark:bg-[url('./assets/sections-images/tecnologies-imgs/tecnologies-bg-dark.webp')]
       bg-no-repeat
       bg-fixed
       bg-cover
       bg-center
-      /* bg-blend-difference
-      dark:bg-blend-hard-light */
     ;
   }
 
@@ -174,19 +168,16 @@
   .generic_tabset {
     @apply
       flex
-      /* flex-col */
       items-center
       justify-center
-      /* w-fit */
       default_text
-      /* mx-auto */
     ;
   }
 
   .generic_tabset ul:not(.timeline-ul) {
     @apply
       flex
-      w-screen
+      w-full
       items-center
       justify-center
     ;

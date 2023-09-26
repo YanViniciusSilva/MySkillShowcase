@@ -22,7 +22,7 @@ export class SkillCardsComponent implements OnInit{
     addEventListener("resize", () => {
       const size = window.innerWidth;
       this.resizeCard = size <= 600 ? true : false;
-    });
+    }, { passive: true });
   }
 
 }
