@@ -84,8 +84,8 @@
 
   .bg_principal {
     @apply
-      dark:bg-[url('src/assets/sections-images/tecnologies-imgs/tecnologies-bg-dark.jpg')]
-      bg-[url('src/assets/sections-images/tecnologies-imgs/tecnologies-bg-light.jpg')]
+      dark:bg-[url('src/assets/sections-images/tecnologies-imgs/technologies-bg-dark.jpg')]
+      bg-[url('src/assets/sections-images/tecnologies-imgs/technologies-bg-light.jpg')]
 
       /* dark:bg-[#171f2c]
       bg-[#260450] */
