@@ -26,9 +26,7 @@ export class LoadingComponent implements OnInit {
 
   ngOnInit(): void {
     window.addEventListener("load", () => {
-      setInterval(() => {
-        this.isLoading.emit(true);
-      }, 1000)
+      this.isLoading.emit(true);
     })
   }
 
