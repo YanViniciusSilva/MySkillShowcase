@@ -1,13 +1,8 @@
 <section class="flex flex-col w-full">
-  <!-- <div class="flex items-center justify-center w-full flex-col bg-transparent mt-12 backdrop-blur-sm">
-    <h1 class="default_title">Sobre mim</h1>
-    <p class="default_text text-center">Um pouco sobre quem eu sou.</p>
-  </div> -->
-
   <div class="flex w-full items-center justify-center mb-1">
   <c-carousel
     id="carousel"
-    class="w-full mx-auto max-w-[1000px] min-h-[290px] rounded-md transition-all bg_glass backdrop-blur-sm"
+    class="w-full mx-auto max-w-[1000px] min-h-[290px] rounded-md transition-all bg_glass border border-[#00000033] dark:border-[#C0C0C033] backdrop-blur-sm"
     [interval]="0"
   >
     <c-carousel-inner class="relative w-[90%] {{ !resizeCarousel ? 'min-h-[290px]' : 'min-h-[500px] text-justify' }}">

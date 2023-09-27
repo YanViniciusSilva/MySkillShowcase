@@ -64,9 +64,6 @@
 
   .bg_glass {
     @apply
-    border
-    border-[#00000033]
-    dark:border-[#C0C0C033]
     bg-transparent
     bg-gradient-to-br dark:from-[#C0C0C00D] from-[#0000000D] dark:via-[#C0C0C033] via-[#00000033] dark:to-[#C0C0C00D] to-[#0000000D]
     backdrop-blur-sm;
@@ -219,6 +216,9 @@
       my-10
       min-[600px]:m-5
       min-[600px]:max-w-[608px]
+      border
+    border-[#00000033]
+    dark:border-[#C0C0C033]
   }
 
   .skill_card_header {
@@ -340,16 +340,15 @@
     @apply
       relative
       w-full
-      /* md:w-2/3 */
       max-w-[450px]
       bg_glass
       py-4
       px-4
       md:px-8
       rounded-[5px]
-      /* m-auto */
-
-      /* animate-slideUp */
+      border
+    border-[#00000033]
+    dark:border-[#C0C0C033]
     ;
   }
 
