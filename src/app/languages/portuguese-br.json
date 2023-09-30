@@ -36,5 +36,34 @@
       }
     }
   },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Esses são os projetos que participei ou desenvolvi ao longo da minha carreira.",
+    "no_deployed_message": "Indisponível",
+    "view_on_git": "Ver no GitHub",
+    "private_git": "Este projeto é privado",
+    "projects_descriptions": {
+      "trade_book": {
+        "title":"Troca Livro (TCC)",
+        "description": "Trabalho de conclusão do curso técnico de ADS, é uma ideia de aplicação criada para fazer com que as pessoas trocassem livros usados entre si de forma prática e fácil para evitar gastos com novos exemplares"
+      },
+      "wedding_invite": {
+        "title":"Convite de casamento",
+        "description": "Convite desenvolvido para divulgar as informações do evento e confirmar a presença dos convidados. Desenvolvido com o Realtime Database do Firebase com acompanhamento em tempo real da confirmação de presença dos participantes."
+      },
+      "pokedex": {
+        "title":"Pokedéx",
+        "description": "Projeto de Pokedex desenvolvido com objetivo de aperfeiçoamento, utiliza API pública (PokeAPI) para receber informações dinâmicas, além de funções de busca e outros mecanismos criados com os recursos nativos do Angular."
+      },
+      "portfolio": {
+        "title":"Portifólio",
+        "description": "Sim, o site em que você está agora!. Desenvolvido em Angular juntamente com Tailwind."
+      },
+      "glampartners": {
+        "title":"Portal glampartners",
+        "description": "O portal glampartner é uma plataforma de influenciadoras digitais desenvolvida pela empresa B4A. Neste projeto adquiri muitas experiências, em questão de tecnologias pude trabalhar com Angular no front, Java no back-end e SQL server no banco de dados. Atualmente devido a atualizações, também pude utilizar Tailwind e NestJs."
+      }
+    }
+  },
   "loading": "Carregando"
 }

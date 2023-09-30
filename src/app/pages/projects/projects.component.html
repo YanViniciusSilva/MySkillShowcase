@@ -2,8 +2,8 @@
 
 <section class="flex flex-col w-screen">
   <div class="flex items-center justify-center w-full flex-col bg-transparent mt-12 backdrop-blur-sm">
-    <h1 class="default_title">Projetos</h1>
-    <p class="default_text text-center">Esses são os projetos que participei ou desenvolvi ao longo da minha carreira.</p>
+    <h1 class="default_title">{{ lang.projects.title }}</h1>
+    <p class="default_text text-center">{{ lang.projects.subtitle }}</p>
   </div>
 
   <div class="timeline">
@@ -18,10 +18,13 @@
             />
           </nb-card-header>
           <nb-card-body class="project-body">
-            <h2>{{project.title}} - {{project.year}}</h2>
+            <h2>{{ project.title }} - {{ project.year }}</h2>
             <p>
-              {{project.description}}
+              {{ project.description }}
             </p>
+            <div class="tags">
+              <app-tag *ngFor="let tech of project.technologies" [text]="tech.name"></app-tag>
+            </div>
           </nb-card-body>
           <nb-card-footer class="project-footer">
             <button
@@ -30,7 +33,7 @@
             >
               <span>
                 site <br/>
-                {{project.deployed ? project.project_url : 'coming soon'}}
+                {{ project.deployed ? project.project_url : lang.projects.no_deployed_message }}
               </span>
               <ng-icon size="30px" name="heroCodeBracket"></ng-icon>
             </button>
@@ -39,7 +42,7 @@
               [disabled]="project.isPrivate"
             >
               <span>
-                {{project.isPrivate ? 'This project is private' : 'View on GitHub'}}
+                {{ project.isPrivate ? lang.projects.private_git : lang.projects.view_on_git }}
               </span><br>
               <ng-icon size="30px" name="octMarkGithub" ></ng-icon>
             </button>

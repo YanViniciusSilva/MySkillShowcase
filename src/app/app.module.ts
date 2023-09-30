@@ -20,7 +20,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
     ConfigBarComponent,
-    LoadingComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +31,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
     HttpClientModule,
     AngularSvgIconModule.forRoot(),
     NbThemeModule.forRoot(),
-    NbTabsetModule,
+    NbTabsetModule
   ],
   providers: [provideAnimations()],
   bootstrap: [AppComponent],

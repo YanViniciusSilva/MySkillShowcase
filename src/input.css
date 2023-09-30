@@ -313,6 +313,10 @@
 
       /* md:before:-right-[6px] */
     ;
+
+    .tags {
+      @apply justify-end relative flex w-full flex-wrap mt-4 mx-0;
+    }
   }
 
   .timeline-ul-li:nth-child(even) {
@@ -334,6 +338,10 @@
       before:-left-1
       md:before:-left-[4px]
     ;
+
+    .tags {
+      @apply justify-start relative flex w-full flex-wrap mt-4 mx-0;
+    }
   }
 
   .project {

@@ -1,7 +1,10 @@
+import { environment } from "src/environments/environment";
+
 export interface ProjectsContentModel {
   title: string;
   description: string;
   image: string;
+  technologies?: {name: string}[];
   project_url: string;
   project_git_url: string;
   year: number;
@@ -9,16 +12,19 @@ export interface ProjectsContentModel {
   deployed: boolean;
 };
 
+const lang = environment.translation;
+
 export const projectsContent:ProjectsContentModel[] = [
   {
-    title: 'Troca Livro (TCC)',
+    title: `${lang.projects.projects_descriptions.trade_book.title}`,
     description: `
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Dolorum quibusdam fugiat commodi iure aspernatur pariatur,
-      mollitia ad a excepturi similique officiis accusamus hic
-      impedit illo reprehenderit reiciendis? Fuga, cum expedita?
+      ${lang.projects.projects_descriptions.trade_book.description}
     `,
     image: 'assets/sections-images/projects-imgs/tradeBook.svg',
+    technologies: [
+      { name: 'Angular' },
+      { name: 'Firebase' }
+    ],
     project_url: 'www.pokedex.com',
     project_git_url: 'github.com/YanViniciusSilva/TradeBook',
     year: 2021,
@@ -26,13 +32,14 @@ export const projectsContent:ProjectsContentModel[] = [
     deployed: false
   },
   {
-    title: 'Convite de casamento',
+    title: `${lang.projects.projects_descriptions.wedding_invite.title}`,
     description: `
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Dolorum quibusdam fugiat commodi iure aspernatur pariatur,
-      mollitia ad a excepturi similique officiis accusamus hic
-      impedit illo reprehenderit reiciendis? Fuga, cum expedita?
+      ${lang.projects.projects_descriptions.wedding_invite.description}
     `,
+    technologies: [
+      { name: 'Angular' },
+      { name: 'Firebase' }
+    ],
     image: 'assets/sections-images/projects-imgs/invite.svg',
     project_url: 'wedding-inviters-list.firebaseapp.com',
     project_git_url: 'github.com/YanViniciusSilva/Wedding-invite',
@@ -41,28 +48,50 @@ export const projectsContent:ProjectsContentModel[] = [
     deployed: true
   },
   {
-    title: 'Pokedex',
+    title: `${lang.projects.projects_descriptions.glampartners.title}`,
     description: `
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Dolorum quibusdam fugiat commodi iure aspernatur pariatur,
-      mollitia ad a excepturi similique officiis accusamus hic
-      impedit illo reprehenderit reiciendis? Fuga, cum expedita?
+      ${lang.projects.projects_descriptions.glampartners.description}
     `,
+    technologies: [
+      { name: 'Angular' },
+      { name: 'Java' },
+      { name: 'SQL' },
+      { name: 'NestJs' },
+      { name: 'Tailwind' },
+
+    ],
+    image: 'assets/sections-images/projects-imgs/glampartners.svg',
+    project_url: 'glampartner.com.br',
+    project_git_url: 'github.com/YanViniciusSilva/MySkillShowcase',
+    year: 2022,
+    isPrivate: true,
+    deployed: true
+  },
+  {
+    title: `${lang.projects.projects_descriptions.pokedex.title}`,
+    description: `
+      ${lang.projects.projects_descriptions.pokedex.description}
+    `,
+    technologies: [
+      { name: 'Angular' },
+      { name: 'Public API' }
+    ],
     image: 'assets/sections-images/projects-imgs/pokedex.svg',
     project_url: 'www.pokedex.com',
     project_git_url: 'github.com/YanViniciusSilva/PokedexAngular',
-    year: 2023,
+    year: 2021,
     isPrivate: false,
     deployed: false
   },
   {
-    title: 'Portifólio',
+    title: `${lang.projects.projects_descriptions.portfolio.title}`,
     description: `
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Dolorum quibusdam fugiat commodi iure aspernatur pariatur,
-      mollitia ad a excepturi similique officiis accusamus hic
-      impedit illo reprehenderit reiciendis? Fuga, cum expedita?
+      ${lang.projects.projects_descriptions.portfolio.description}
     `,
+    technologies: [
+      { name: 'Angular' },
+      { name: 'Tailwind' }
+    ],
     image: 'assets/sections-images/projects-imgs/portifolio.svg',
     project_url: 'yansilvadev.com.br',
     project_git_url: 'github.com/YanViniciusSilva/MySkillShowcase',

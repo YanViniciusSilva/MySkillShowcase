@@ -21,6 +21,7 @@ import { SkillCardsComponent } from '../pages/tecnologies/skill-cards/skill-card
 import { ProjectsComponent } from '../pages/projects/projects.component';
 import { octMarkGithub } from '@ng-icons/octicons';
 import { CarouselModule } from '@coreui/angular';
+import { TagComponent } from '../pages/projects/components/tag/tag.component';
 @NgModule({
   declarations: [
     AboutMeComponent,
@@ -28,6 +29,7 @@ import { CarouselModule } from '@coreui/angular';
     TecnologiesComponent,
     SkillCardsComponent,
     ProjectsComponent,
+    TagComponent
   ],
   imports: [
     CommonModule,
