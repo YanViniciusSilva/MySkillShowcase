@@ -10,8 +10,8 @@ import { FormControl } from '@angular/forms';
 export class ConfigBarComponent {
 
   selectOptions = [
-    {label: 'Português-BR', value: environment.translateOpt.pt},
-    {label: 'Inglês', value: environment.translateOpt.en}
+    { label: 'Português-BR', value: environment.translateOpt.pt },
+    { label: 'Inglês', value: environment.translateOpt.en }
   ]
 
   languageSelected = localStorage.getItem('language');
@@ -29,6 +29,7 @@ export class ConfigBarComponent {
     // selecionando linguagem padrão
     if(this.languageSelected === null && this.languageSelected !== environment.translateOpt.pt && this.languageSelected !== environment.translateOpt.en){
       localStorage.setItem('language', 'PT-BR');
+      this.langSelect.patchValue(this.selectOptions[0].value);
     }
 
     // selecionando tema padrão
