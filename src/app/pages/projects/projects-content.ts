@@ -25,7 +25,7 @@ export const projectsContent:ProjectsContentModel[] = [
       { name: 'Angular' },
       { name: 'Firebase' }
     ],
-    project_url: 'www.pokedex.com',
+    project_url: '',
     project_git_url: 'github.com/YanViniciusSilva/TradeBook',
     year: 2021,
     isPrivate: false,
@@ -77,11 +77,11 @@ export const projectsContent:ProjectsContentModel[] = [
       { name: 'Public API' }
     ],
     image: 'assets/sections-images/projects-imgs/pokedex.svg',
-    project_url: 'www.pokedex.com',
+    project_url: 'pokedexangularproject.web.app',
     project_git_url: 'github.com/YanViniciusSilva/PokedexAngular',
     year: 2021,
     isPrivate: false,
-    deployed: false
+    deployed: true
   },
   {
     title: `${lang.projects.projects_descriptions.portfolio.title}`,
