@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
 
   socialMidiaLinks = [
     {
-      link: 'https://linkedin.com/in/yan-vinicius-jesus-silva-b1b071238',
+      link: 'https://www.linkedin.com/in/yanviniciussilva',
       image: 'assets/linkedin.svg'
     },
     {
