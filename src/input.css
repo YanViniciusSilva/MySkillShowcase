@@ -81,6 +81,8 @@
 
   .bg_principal {
     @apply
+      bg-[#260552]
+      dark:bg-[#04060a]
       bg-[url('./assets/sections-images/tecnologies-imgs/tecnologies-bg-light.webp')]
       dark:bg-[url('./assets/sections-images/tecnologies-imgs/tecnologies-bg-dark.webp')]
       bg-no-repeat
