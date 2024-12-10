@@ -4,10 +4,12 @@
     id="carousel"
     class="w-full mx-auto max-w-[1000px] min-h-[290px] rounded-md transition-all bg_glass border border-[#00000033] dark:border-[#C0C0C033] backdrop-blur-sm"
     [interval]="0"
+    transition="crossfade"
+
   >
-    <c-carousel-inner class="relative w-[90%] {{ !resizeCarousel ? 'min-h-[290px]' : 'min-h-[500px] text-justify' }}">
-      <c-carousel-item class="h-[290px] py-[5%]" *ngFor="let slide of slides">
-        <div class="flex {{ !resizeCarousel ? 'flex-row' : 'flex-col' }} items-center w-fit mx-auto max-w-[75%]">
+    <c-carousel-inner class="relative w-[90%] {{ !resizeCarousel ? 'min-h-[400px]' : 'min-h-[500px] text-justify' }}">
+      <c-carousel-item class="flex items-center justify-center h-[500px] py-[2%]" *ngFor="let slide of slides">
+        <div class="flex {{ !resizeCarousel ? 'flex-row' : 'flex-col' }} items-center w-fit m-auto h-full max-w-[75%]">
           <svg-icon
             [src]="slide.image"
             class="{{ !resizeCarousel ? 'mr-8' : 'mr-0' }} translate-y-0 animate-flutuo"

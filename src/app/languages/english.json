@@ -1,6 +1,6 @@
 {
   "header": {
-    "greeting": "I'm Yan, Full Stack Dev",
+    "greeting": "I'm Yan, Full Stack Developer",
     "sections_btn": {
       "about_me": "About Me",
       "technologies": "Technologies",
@@ -11,28 +11,31 @@
     "about_me_title": "About Me",
     "about_me_subtitle": "A bit about who I am",
     "about_me_banner": {
-      "about_my_person": "Born and raised in Santo André, São Paulo, I started learning programming at the age of 17, and I haven't stopped since. I'm always looking for ways to improve as a professional and as a person!",
+      "about_my_person": "Born and raised in Santo André, São Paulo, I started learning programming at the age of 17 and haven't stopped since. I'm always looking for ways to improve both as a professional and as a person!",
       "about_hobbies": "What would a programmer be without their games, series, and anime, right? To no one's surprise, 'nerdiness' is an essential part of who I am. One Piece is the best anime, and Zelda is the best franchise, indisputably.",
-      "about_career": "Why did I choose to be a programmer? Freedom! It's awesome that words on a screen allow you to create almost anything for any purpose. It's bizarrely cool! And I love coffee... I think it's almost a prerequisite, isn't it?"
+      "about_career": "Why did I choose to be a programmer? Freedom! It's amazing that words on a screen allow you to create almost anything for any purpose. It's incredibly cool! And I love coffee... I think it's almost a prerequisite, isn't it?"
     }
   },
   "tech_skills": {
+    "most_used": "Most used",
     "subtitle": "Below you can check out my skills in each technology I've used!",
     "skill_cards": {
       "skills": {
-        "logic": "Solid foundation in programming logic with online certification from video courses, technical courses, and currently in progress.",
-        "nest_js": "Experience in creating RESTful APIs from scratch, complete CRUD creation. Capable of meeting various needs.",
+        "logic": "Strong foundation in programming logic with online certification from video courses, technical courses, and currently ongoing.",
+        "nest_js": "Experience in creating RESTful APIs from scratch and complete CRUD creation. Capable of meeting various needs.",
         "java": "Experience in creating and modifying endpoints, complete CRUD, and bug fixes.",
         "javascript": "Considerable experience in using JavaScript for animation, data manipulation, formatting, validations, and more. Mostly used in frontend development and for small automations.",
-        "node_js": "Basic experience in creating RESTful APIs from scratch and creating endpoints.",
-        "angular": "Extensive experience in building entire websites, participating in large projects developed in Angular, from e-commerce to specific applications.",
-        "rxjs": "Alongside Angular, I have experience in using RxJS for data handling to create reactive applications.",
+        "node_js": "Considerable experience in creating REST APIs from scratch and creating endpoints.",
+        "angular": "Extensive experience in building entire websites and participating in large projects developed in Angular, from e-commerce to specific applications.",
+        "rxjs": "Alongside Angular, I have experience using RxJS for data handling to create reactive applications.",
         "typescript": "Extensive experience in data handling, formatting, creating forms, and more. Capable of meeting various needs.",
         "html_css": "Extensive experience with both, present in all web projects I've developed, in addition to the fundamentals learned in technical and higher education.",
         "tailwind": "Experience in styling components in HTML, creating presets, dark mode, and more. In fact, the website you're currently browsing was styled with Tailwind.",
         "postgresql": "Experience in data manipulation, creation, editing, relationships, and more. Capable of meeting core needs.",
         "firebase": "Experience with data manipulation and development using Authentication, Firestore Database, Realtime Database, Hosting, and Storage services.",
-        "sql": "Extensive experience in both data manipulation and development, including creating complete relational structures, queries, stored procedures, routines, and more. Capable of meeting the vast majority of needs."
+        "sql": "Extensive experience in data manipulation and development, including creating complete relational structures, queries, stored procedures, routines, and more. Capable of meeting the vast majority of needs.",
+        "react_native": "Experience in creating native applications from scratch for Android using Expo.",
+        "prisma": "Experience using Prisma with NestJs for database management, schema updates, migrations, and more. Capable of meeting the vast majority of needs."
       }
     }
   },
@@ -45,7 +48,7 @@
     "projects_descriptions": {
       "trade_book": {
         "title": "Book Exchange (TCC)",
-        "description": "Final project for the ADS technical course. It's an application idea created to enable people to exchange used books with each other in a practical and easy way to avoid expenses on new copies."
+        "description": "Final project for the ADS technical course. It's an application designed to enable people to exchange used books with each other in a practical and easy way to avoid expenses on new copies."
       },
       "wedding_invite": {
         "title": "Wedding Invitation",
@@ -57,13 +60,26 @@
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "Yes, the website you are on right now! Developed in Angular along with Tailwind."
+        "description": "Yes, the website you are on right now! Developed with Angular and Tailwind."
       },
       "glampartners": {
-        "title": "glampartners portal",
-        "description": "The glampartner portal is a digital influencer platform developed by the B4A company. In this project, I gained a lot of experience. In terms of technologies, I worked with Angular on the front-end, Java on the back-end, and SQL Server in the database. Due to updates, I also had the opportunity to use Tailwind and NestJs."
+        "title": "Bfluence",
+        "description": "The Bfluence portal is a digital influencer platform developed by the B4A company. In this project, I gained a lot of experience. In terms of technologies, I worked with Angular on the front-end, Java on the back-end, and SQL Server in the database. Due to updates, I also had the opportunity to use Tailwind and NestJs."
+      },
+      "budget_onboarding": {
+        "title": "Interactive Budgets (TCC)",
+        "description": "Project created to assist a local entrepreneur in managing customer interactions. The platform allows customers to provide essential information for the tattoo artist's services even before directly interacting with the professional."
+      },
+      "albuquerque_tattoo_api": {
+        "title": "Jobs and Notifications API (TCC)",
+        "description": "API designed to manage budgets. The platform tracks the status of each budget by date and sends automatic notifications whenever a new budget is created, ensuring efficient and up-to-date tracking."
+      },
+      "albuquerque_tattoo_app": {
+        "title": "Budget Management App (TCC)",
+        "description": "App developed to efficiently manage budgets. The platform centralizes the details of budgets created on the website, sends real-time notifications for tracking, and facilitates redirection to the customer's contact information, ensuring agility in customer service."
       }
-}
+    }
   },
   "loading": "Loading"
 }
+

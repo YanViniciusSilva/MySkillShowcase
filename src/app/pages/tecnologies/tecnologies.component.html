@@ -5,11 +5,11 @@
   </div>
 
   <nb-tabset class="generic_tabset mt-14" [scrollLeft]="false" [scrollTop]="false">
-    <nb-tab class="tab" [scrollLeft]="false" [scrollTop]="false" tabTitle="Back">
-      <app-skill-cards [skill_area]="back_skills"></app-skill-cards>
-    </nb-tab>
     <nb-tab class="tab" [scrollLeft]="false" [scrollTop]="false" tabTitle="front">
       <app-skill-cards [skill_area]="front_skills"></app-skill-cards>
+    </nb-tab>
+    <nb-tab class="tab" [scrollLeft]="false" [scrollTop]="false" tabTitle="Back">
+      <app-skill-cards [skill_area]="back_skills"></app-skill-cards>
     </nb-tab>
     <nb-tab class="tab" [scrollLeft]="false" [scrollTop]="false" tabTitle="extras">
       <app-skill-cards [skill_area]="extra_skills"></app-skill-cards>

@@ -11,11 +11,15 @@
       <li class="timeline-ul-li" *ngFor="let project of projects">
         <nb-card class="project animate-slideUp">
           <nb-card-header class="flex items-center justify-center h-[172.5px]">
-            <img
-              [src]="project.image"
-              alt="project image"
-              class="w-full h-fit m-0 rounded-md"
-            />
+            <div
+              class="flex bg-neutral-800 rounded-md w-full items-center justify-center"
+            >
+              <img
+                [src]="project.image"
+                alt="project image"
+                class="z-10 w-sm max-h-48 m-0 rounded-md"
+              />
+            </div>
           </nb-card-header>
           <nb-card-body class="project-body">
             <h2>{{ project.title }} - {{ project.year }}</h2>

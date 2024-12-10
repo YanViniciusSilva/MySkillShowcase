@@ -2,37 +2,40 @@
   "header": {
     "greeting": "Sou Yan, Dev FullStack",
     "sections_btn": {
-      "about_me": "Sobre mim",
+      "about_me": "Sobre Mim",
       "technologies": "Tecnologias",
       "projects": "Projetos"
     }
   },
   "about_me": {
-    "about_me_title": "Sobre mim",
+    "about_me_title": "Sobre Mim",
     "about_me_subtitle": "Um pouco sobre quem eu sou",
     "about_me_banner": {
-      "about_my_person": "Nascido e criado na cidade de Santo André, no estado de São Paulo, comecei a aprender programação aos 17 anos e desde então não parei mais. Estou sempre buscando formas de melhorar como profissional e como pessoa!",
-      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes, não é mesmo? Para surpresa de ninguém, as 'nerdices' são um fato indispensável sobre minha pessoa. One Piece é o melhor anime e Zelda é a melhor franquia, indiscutivelmente.",
+      "about_my_person": "Nascido e criado em Santo André, São Paulo, comecei a aprender programação aos 17 anos e desde então não parei mais. Estou sempre buscando formas de melhorar como profissional e como pessoa!",
+      "about_hobbies": "O que seria de um programador sem seus jogos, séries e animes, não é mesmo? Para surpresa de ninguém, as 'nerdices' são um fato indispensável sobre mim. One Piece é o melhor anime e Zelda é a melhor franquia, indiscutivelmente.",
       "about_career": "Por que escolhi ser programador? Liberdade! É incrível que palavras em uma tela te permitam criar praticamente qualquer coisa para qualquer finalidade. É bizarramente legal! E eu adoro café... Acho que é quase um pré-requisito, não é?"
     }
   },
   "tech_skills": {
+    "most_used": "Mais utilizado",
     "subtitle": "Abaixo você pode conferir minhas habilidades em cada tecnologia que já usei!",
     "skill_cards": {
       "skills": {
-        "logic": "Boa base em lógica de programação com certificação online do curso em vídeo, curso técnico e atualmente.",
-        "nest_js": "Experiência na criação de API REST do zero, criação de CRUD completo. Capaz de atender bem às possíveis necessidades.",
-        "java": "Experiência na criação e alteração de endpoint, CRUD completo e correção de bugs.",
-        "javascript": "Experiência considerável no uso de javascript para animação, manipulação e formatação de dados, validações entre outros. Majoritariamente usado no front e no desenvolvimento de pequenas automações.",
-        "node_js": "Experiência básica na criação de API REST do zero e criação de endpoint.",
+        "logic": "Boa base em lógica de programação com certificação online do curso em vídeo, curso técnico e atualmente em progresso.",
+        "nest_js": "Experiência na criação de APIs REST do zero, criação de CRUD completo. Capaz de atender bem às possíveis necessidades.",
+        "java": "Experiência na criação e alteração de endpoints, CRUD completo e correção de bugs.",
+        "javascript": "Experiência considerável no uso de JavaScript para animação, manipulação de dados, formatação, validações, entre outros. Majoritariamente usado no front e no desenvolvimento de pequenas automações.",
+        "node_js": "Experiência considerável na criação de APIs REST do zero e criação de endpoints.",
         "angular": "Ampla experiência na criação de sites inteiros, participação em grandes projetos desenvolvidos em Angular, desde e-commerce a aplicações específicas.",
-        "rxjs": "Juntamente com angular tenho experiência na utilização de rxjs no tratamento de dados para a criação de aplicações reativas.",
-        "typescript": "Ampla experiência com tratamento e formatação de dados, criação de formulários e mais. Capaz de atender bem as possíveis necessidades.",
-        "html_css": "Ampla experiência com ambos, estando presente em todos os projetos web que desenvolvi além dos fundamentos aprendidos nas formações técnica e superior.",
-        "tailwind": "Experiência na estilização de components no html, criação de pré-sets, modo dark, entre outros. Inclusive, o site que está navegando agora foi estilizado com Tailwind.",
-        "postgresql": "Experiência na manipulação de dados, criação, edição, relacionamento, e outros. Capaz de atender as necessidades principais.",
-        "firebase": "Experiência com a manipulação de dados e desenvolvimento utilizando os serviços de Authentication, Firestore Database, Realtime Database, Hosting e Storage.",
-        "sql": "Muita experiência tanto na parte de manipulação quanto no desenvolvimento com criação de estruturas relacionais completas, consultas, procs, rotinas e outros. Capaz de atender a grande maioria das necessidades."
+        "rxjs": "Juntamente com Angular, tenho experiência na utilização de RxJS no tratamento de dados para a criação de aplicações reativas.",
+        "typescript": "Ampla experiência com tratamento e formatação de dados, criação de formulários e mais. Capaz de atender bem às possíveis necessidades.",
+        "html_css": "Ampla experiência com ambos, estando presente em todos os projetos web que desenvolvi, além dos fundamentos aprendidos nas formações técnica e superior.",
+        "tailwind": "Experiência na estilização de componentes no HTML, criação de presets, modo escuro, entre outros. Inclusive, o site que está navegando agora foi estilizado com Tailwind.",
+        "postgresql": "Experiência na manipulação de dados, criação, edição, relacionamento, e outros. Capaz de atender às necessidades principais.",
+        "firebase": "Experiência com manipulação de dados e desenvolvimento utilizando os serviços de Authentication, Firestore Database, Realtime Database, Hosting e Storage.",
+        "sql": "Muita experiência tanto na parte de manipulação quanto no desenvolvimento com criação de estruturas relacionais completas, consultas, procedures, rotinas e outros. Capaz de atender à grande maioria das necessidades.",
+        "react_native": "Experiência na criação de aplicativos nativos do zero para Android com Expo.",
+        "prisma": "Experiência na utilização de Prisma junto do NestJs para gerenciamento de banco de dados, atualizações de schemas, migrações e outros. Capaz de atender à grande maioria das necessidades."
       }
     }
   },
@@ -44,26 +47,39 @@
     "private_git": "Este projeto é privado",
     "projects_descriptions": {
       "trade_book": {
-        "title":"Troca Livro (TCC)",
-        "description": "Trabalho de conclusão do curso técnico de ADS, é uma ideia de aplicação criada para fazer com que as pessoas trocassem livros usados entre si de forma prática e fácil para evitar gastos com novos exemplares"
+        "title": "Troca Livro (TCC)",
+        "description": "Trabalho de conclusão do curso técnico de ADS. É uma ideia de aplicação criada para que as pessoas troquem livros usados de forma prática e fácil, evitando gastos com novos exemplares."
       },
       "wedding_invite": {
-        "title":"Convite de casamento",
+        "title": "Convite de Casamento",
         "description": "Convite desenvolvido para divulgar as informações do evento e confirmar a presença dos convidados. Desenvolvido com o Realtime Database do Firebase com acompanhamento em tempo real da confirmação de presença dos participantes."
       },
       "pokedex": {
-        "title":"Pokedéx",
-        "description": "Projeto de Pokedex desenvolvido com objetivo de aperfeiçoamento, utiliza API pública (PokeAPI) para receber informações dinâmicas, além de funções de busca e outros mecanismos criados com os recursos nativos do Angular."
+        "title": "Pokédex",
+        "description": "Projeto de Pokédex desenvolvido com o objetivo de aperfeiçoamento. Utiliza API pública (PokeAPI) para receber informações dinâmicas, além de funções de busca e outros mecanismos criados com os recursos nativos do Angular."
       },
       "portfolio": {
-        "title":"Portifólio",
-        "description": "Sim, o site em que você está agora!. Desenvolvido em Angular juntamente com Tailwind."
+        "title": "Portfólio",
+        "description": "Sim, o site em que você está agora! Desenvolvido em Angular juntamente com Tailwind."
       },
       "glampartners": {
-        "title":"Portal glampartners",
-        "description": "O portal glampartner é uma plataforma de influenciadoras digitais desenvolvida pela empresa B4A. Neste projeto adquiri muitas experiências, em questão de tecnologias pude trabalhar com Angular no front, Java no back-end e SQL server no banco de dados. Atualmente devido a atualizações, também pude utilizar Tailwind e NestJs."
+        "title": "Bfluence",
+        "description": "O Bfluence é uma plataforma de influenciadoras digitais desenvolvida pela empresa B4A. Neste projeto adquiri muitas experiências. Em termos de tecnologias, trabalhei com Angular no front, Java no back-end e SQL Server no banco de dados. Atualmente, devido a atualizações, também utilizei Tailwind e NestJs."
+      },
+      "budget_onboarding": {
+        "title": "Orçamentos Interativos (TCC)",
+        "description": "Projeto criado para auxiliar um empreendedor local na gestão do atendimento aos clientes. A plataforma permite que os clientes forneçam, de maneira intuitiva, as informações essenciais para o atendimento do tatuador, mesmo antes de interagir diretamente com o profissional."
+      },
+      "albuquerque_tattoo_api": {
+        "title": "API de Jobs e Notificações (TCC)",
+        "description": "API projetada para gerenciar orçamentos. A plataforma acompanha o status de cada orçamento por data e envia notificações automáticas sempre que um novo orçamento é criado, garantindo um acompanhamento eficiente e atualizado."
+      },
+      "albuquerque_tattoo_app": {
+        "title": "App de Gerenciamento de Orçamentos (TCC)",
+        "description": "Aplicativo desenvolvido para gerenciar orçamentos de forma eficiente. A plataforma centraliza os detalhes dos orçamentos criados no site, envia notificações para acompanhamento em tempo real e facilita o redirecionamento para o contato informado pelo cliente, garantindo agilidade no atendimento."
       }
     }
   },
   "loading": "Carregando"
 }
+

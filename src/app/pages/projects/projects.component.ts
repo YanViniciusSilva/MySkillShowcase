@@ -5,20 +5,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
-  readonly projects =
-    projectsContent
-      .sort((a, b) => {
-        if (a.year > b.year) {
-          return 1;
-        } else if (a.year < b.year) {
-          return -1;
-        } else {
-          return 0;
-        }
-      });
+  readonly projects = projectsContent.sort((a, b) => b.year - a.year);
 
   lang = environment.translation;
 

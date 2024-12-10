@@ -7,22 +7,30 @@
       [scrollLeft]="false"
     >
       <nb-card-header >
-        <div class="skill_card_header {{resizeCard ? '-top-14' : 'min-[600px]:pb-6' }}">
+        <div class="skill_card_header -top-14 sm:top-0 sm:pb-6">
           <svg-icon
             [src]="skill.image"
             [svgStyle]="{'max-width.px': 164, 'max-height.px': 164}"
-            *ngIf="resizeCard"
+            *ngIf="!resizeCard"
           ></svg-icon>
-          <h2 class="skill_card_title">{{skill.title}}</h2>
+          <div class="grid grid-cols-1 grid-flow-row sm:grid-cols-3 w-full">
+            <div class="flex col-span-1 mt-5 sm:mt-0 items-center justify-center sm:justify-start">
+              <div *ngIf="skill.most_used" class="sm:m-0 w-fit items-center py-1 px-2 rounded-md bg-[#BD00FF]">
+                <p class="text-sm">{{ lang.tech_skills.most_used }} ✨</p>
+              </div>
+            </div>
+            <h2 class="skill_card_title col-span-1 text-center whitespace-nowrap">{{skill.title}}</h2>
+          </div>
+
         </div>
       </nb-card-header>
       <nb-card-body class="skill_card_body">
         <svg-icon
-            [src]="skill.image"
-            [svgStyle]="{'max-width.px': 164, 'max-height.px': 164}"
-            *ngIf="!resizeCard"
+          *ngIf="resizeCard"
+          [src]="skill.image"
+          [svgStyle]="{'max-width.px': 164, 'max-height.px': 164}"
         ></svg-icon>
-        <span class="flex items-center ml-0 min-[600px]:ml-3" [innerHTML]="skill.description"></span>
+        <span class="flex items-center ml-0 sm:ml-3" [innerHTML]="skill.description"></span>
       </nb-card-body>
     </nb-card>
     </div>

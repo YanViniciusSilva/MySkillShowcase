@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components{
+@layer components {
   /* formatação padrão de texto */
   .default_text {
     @apply text-dark-text font-ubuntu text-lg md:text-xl;
@@ -24,8 +23,7 @@
 
   /* estilo padrão para ícones de redes sociais */
   .social_icons {
-    @apply
-      flex
+    @apply flex
       items-center
       justify-center
       w-12
@@ -54,24 +52,20 @@
     @apply hover:animate-rotate;
   }
 
-   /* degradê tema */
-   .bg_theme {
-    @apply
-      bg-red-600
-      dark:bg-indigo-600
-    ;
+  /* degradê tema */
+  .bg_theme {
+    @apply bg-red-600
+      dark:bg-indigo-600;
   }
 
   .bg_glass {
-    @apply
-    bg-transparent
+    @apply bg-transparent
     bg-gradient-to-br dark:from-[#C0C0C00D] from-[#0000000D] dark:via-[#C0C0C033] via-[#00000033] dark:to-[#C0C0C00D] to-[#0000000D]
     backdrop-blur-sm;
   }
 
   .bg_glass_hover {
-    @apply
-    border
+    @apply border
     border-[#00000033]
     dark:border-[#C0C0C033]
     bg-transparent
@@ -80,22 +74,19 @@
   }
 
   .bg_principal {
-    @apply
-      bg-[#260552]
+    @apply bg-[#260552]
       dark:bg-[#04060a]
       bg-[url('./assets/sections-images/tecnologies-imgs/tecnologies-bg-light.webp')]
       dark:bg-[url('./assets/sections-images/tecnologies-imgs/tecnologies-bg-dark.webp')]
       bg-no-repeat
       bg-fixed
       bg-cover
-      bg-center
-    ;
+      bg-center;
   }
 
   /* estilo padrão de botões */
   .btn_theme {
-    @apply
-      rounded-sm
+    @apply rounded-sm
       px-2
       py-[6px]
       font-ubuntu
@@ -128,8 +119,7 @@
 
   /* estilização ng select */
   .select {
-    @apply
-      bg-transparent
+    @apply bg-transparent
       w-36
       py-1
       px-3
@@ -145,8 +135,7 @@
   }
 
   .select ng-dropdown-panel {
-    @apply
-      rounded-sm
+    @apply rounded-sm
       mt-2 -left-[0.3px]
 
       /* tema light */
@@ -156,7 +145,6 @@
       /* tema dark  */
       dark:bg-dark-btn_bg
       dark:text-dark-text;
-
   }
 
   .select ng-dropdown-panel div.ng-dropdown-panel-items div div.ng-option {
@@ -165,67 +153,55 @@
 
   /* tab */
   .generic_tabset {
-    @apply
-      flex
+    @apply flex
       items-center
       justify-center
-      default_text
-    ;
+      default_text;
   }
 
   .generic_tabset ul:not(.timeline-ul) {
-    @apply
-      flex
+    @apply flex
       w-full
       items-center
-      justify-center
-    ;
+      justify-center;
   }
 
   .generic_tabset li:not(.timeline-ul-li) {
-    @apply
-      flex
+    @apply flex
       items-center
       justify-center
-      btn_theme
-    ;
+      btn_theme;
   }
 
   .tab {
-    @apply
-      /* flex */
+    @apply /* flex */
       overflow-hidden
-      transition-all
-    ;
+      transition-all;
   }
 
   .tab.active {
-    @apply
-      bg-gradient-to-br dark:from-indigo-600 from-red-600 dark:to-indigo-600 to-red-600
-    ;
+    @apply bg-gradient-to-br dark:from-indigo-600 from-red-600 dark:to-indigo-600 to-red-600;
   }
 
   /* Cards */
   .skill_card {
-    @apply
-      max-w-[312px]
+    @apply max-w-[312px]
       rounded-md
       pb-5
       px-5
-      min-[600px]:p-5
+      sm:p-5
       pt-0
       bg_glass
       my-10
-      min-[600px]:m-5
-      min-[600px]:max-w-[608px]
+      sm:m-5
+      sm:max-w-[608px]
       border
     border-[#00000033]
-    dark:border-[#C0C0C033]
+    dark:border-[#C0C0C033];
   }
 
   .skill_card_header {
-    @apply
-      relative
+    @apply relative
       flex
       flex-col
       items-center
@@ -233,25 +209,21 @@
   }
 
   .skill_card_title {
-    @apply
-      mt-2
-      min-[600px]:m-0
-    ;
+    @apply mt-2
+      sm:m-0;
   }
 
   .skill_card_body {
-    @apply
-      text-left
-      /* min-[600px]:text-right */
+    @apply text-left
+      /* sm:text-right */
       mb-8
-      min-[600px]:flex
-      min-[600px]:flex-row;
+      sm:flex
+      sm:flex-row;
   }
 
   /* timeline da aba projetos */
   .timeline {
-    @apply
-      relative
+    @apply relative
       mt-4
       mx-auto
       /* ml-5 */
@@ -266,34 +238,27 @@
       md:before:left-1/2
       before:w-[2px]
       before:h-full
-      before:bg-white
-
-    ;
+      before:bg-white;
   }
 
   .timeline-ul {
-    @apply
-      m-0
-      p-0
-    ;
+    @apply m-0
+      p-0;
   }
 
   .timeline-ul-li {
-    @apply
-      list-none
+    @apply list-none
       relative
       w-full
       md:w-1/2
       py-[20px]
       px-[20px]
       md:px-[40px]
-      box-border
-    ;
+      box-border;
   }
 
   .timeline-ul-li:nth-child(odd) {
-    @apply
-      md:float-left
+    @apply md:float-left
       float-right
       md:text-right
       text-left
@@ -313,8 +278,7 @@
       before:-left-1
       md:before:left-[99.5%]
 
-      /* md:before:-right-[6px] */
-    ;
+      /* md:before:-right-[6px] */;
 
     .tags {
       @apply justify-end relative flex w-full flex-wrap mt-4 mx-0;
@@ -322,8 +286,7 @@
   }
 
   .timeline-ul-li:nth-child(even) {
-    @apply
-      float-right
+    @apply float-right
       text-left
       clear-both
       flex
@@ -338,8 +301,7 @@
       before:shadow-lg
       before:top-[24px]
       before:-left-1
-      md:before:-left-[4px]
-    ;
+      md:before:-left-[4px];
 
     .tags {
       @apply justify-start relative flex w-full flex-wrap mt-4 mx-0;
@@ -347,8 +309,7 @@
   }
 
   .project {
-    @apply
-      relative
+    @apply relative
       w-full
       max-w-[450px]
       bg_glass
@@ -358,26 +319,20 @@
       rounded-[5px]
       border
     border-[#00000033]
-    dark:border-[#C0C0C033]
-    ;
+    dark:border-[#C0C0C033];
   }
 
   .project-body {
-    @apply
-      my-10
-    ;
+    @apply my-10;
   }
 
   .project-body h2 {
-    @apply
-      text-2xl
-      my-3
-    ;
+    @apply text-2xl
+      my-3;
   }
 
   .project-footer button {
-    @apply
-      flex
+    @apply flex
       flex-row
       justify-between
       items-center
@@ -397,20 +352,16 @@
       cursor-pointer
       enabled:hover:bg_glass
       disabled:hover:cursor-not-allowed
-      disabled:brightness-50
-    ;
+      disabled:brightness-50;
   }
 
   .project-footer button span {
-    @apply
-      overflow-hidden
+    @apply overflow-hidden
       text-ellipsis
       text-base
       whitespace-nowrap
-      max-w-[300px]
-    ;
+      max-w-[300px];
   }
-
 
   /*Carousel*/
   c-carousel-caption {
