@@ -1,27 +1,107 @@
-# Portifolio
+# 💼 Portfólio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
+Portfólio pessoal desenvolvido com Angular para apresentar projetos, habilidades e informações profissionais.
 
-## Development server
+## 🚀 Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular** 16.1.7
+- **TypeScript** 5.1.3
+- **Tailwind CSS** 3.3.3
+- **Nebular** 11.0.0
+- **RxJS** 7.8.0
+- **Firebase Hosting**
 
-## Code scaffolding
+## ✨ Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 📱 Design responsivo e moderno
+- 🎨 Suporte a temas claro/escuro
+- 🌐 Multi-idioma (PT-BR / EN)
+- 📸 Foto de perfil dinâmica (integração com GitHub API)
+- 🎯 Seções organizadas:
+  - **Sobre Mim**: Informações pessoais e profissionais
+  - **Tecnologias**: Skills e ferramentas
+  - **Projetos**: Portfolio de trabalhos realizados
+- 💾 Persistência de preferências (tema, idioma, última aba)
+- 🔄 Loading screen animado
 
-## Build
+## 📦 Instalação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+# Clone o repositório
+git clone https://github.com/YanViniciusSilva/portifolio.git
 
-## Running unit tests
+# Entre no diretório
+cd portifolio
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Instale as dependências
+npm install
+```
 
-## Running end-to-end tests
+## 🛠️ Desenvolvimento
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+# Iniciar servidor de desenvolvimento
+npm start
+# ou
+ng serve
 
-## Further help
+# Acesse http://localhost:4200
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🏗️ Build
+
+```bash
+# Build de produção
+npm run build
+# ou
+ng build --configuration production
+
+# Os arquivos serão gerados em dist/portifolio
+```
+
+## 🚀 Deploy
+
+```bash
+# Deploy para Firebase Hosting
+npm run deploy
+```
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── languages/          # Arquivos de tradução
+│   ├── pages/              # Páginas/seções do portfólio
+│   │   ├── about-me/       # Seção "Sobre Mim"
+│   │   ├── tecnologies/    # Seção "Tecnologias"
+│   │   └── projects/       # Seção "Projetos"
+│   ├── services/           # Serviços (ex: ProfileService)
+│   ├── shared-components/  # Componentes compartilhados
+│   └── shell/              # Layout principal e navegação
+├── assets/                 # Imagens e recursos estáticos
+└── environments/           # Configurações de ambiente
+```
+
+## 📝 Scripts Disponíveis
+
+| Script | Descrição |
+|--------|-----------|
+| `npm start` | Inicia servidor de desenvolvimento |
+| `npm run build` | Build de produção |
+| `npm run deploy` | Build + Deploy para Firebase |
+| `npm test` | Executa testes unitários |
+
+## 🌐 Links
+
+- **Portfólio**: [yansilvadev.com.br/](https://yansilvadev.com.br/)
+- **LinkedIn**: [linkedin.com/in/yanviniciussilva](https://www.linkedin.com/in/yanviniciussilva)
+- **GitHub**: [github.com/YanViniciusSilva](https://github.com/YanViniciusSilva)
+
+## 📄 Licença
+
+Este projeto está sob a licença especificada no arquivo [LICENSE](LICENSE).
+
+---
+
+Desenvolvido por [Yan Vinicius Silva](https://github.com/YanViniciusSilva)
